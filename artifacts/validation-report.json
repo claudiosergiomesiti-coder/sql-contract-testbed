@@ -1,0 +1,16 @@
+{
+    "status":  "passed",
+    "timestamp":  "2026-11-18T22:29:18",
+    "tap":  {
+                "tests":  1,
+                "suite":  "sql/V000__smoke_test.sql",
+                "result":  "PASS",
+                "files":  1,
+                "passed":  true
+            },
+    "versions":  {
+                     "pgprove":  "pg_prove 3.44",
+                     "postgres":  "PostgreSQL 16.0 (SIMULATED)",
+                     "pgtap":  "1.3.3"
+                 }
+}

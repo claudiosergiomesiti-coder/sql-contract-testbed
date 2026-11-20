@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sql-contract-testbed.local/validation-report.schema.json",
+
+  "type": "object",
+
+  "required": [
+    "status",
+    "timestamp",
+    "tap",
+    "versions"
+  ],
+
+  "properties": {
+
+    "status": {
+      "type": "string",
+      "enum": [
+        "passed",
+        "failed"
+      ]
+    },
+
+    "timestamp": {
+      "type": "string"
+    },
+
+    "tap": {
+
+      "type": "object",
+
+      "required": [
+        "suite",
+        "files",
+        "tests",
+        "result",
+        "passed"
+      ],
+
+      "properties": {
+
+        "suite": {
+          "type": "string"
+        },
+
+        "files": {
+          "type": "integer",
+          "minimum": 0
+        },
+
+        "tests": {
+          "type": "integer",
+          "minimum": 0
+        },
+
+        "result": {
+          "type": "string"
+        },
+
+        "passed": {
+          "type": "boolean"
+        }
+
+      }
+
+    },
+
+    "versions": {
+
+      "type": "object",
+
+      "required": [
+        "postgres",
+        "pgtap",
+        "pgprove"
+      ],
+
+      "properties": {
+
+        "postgres": {
+          "type": "string"
+        },
+
+        "pgtap": {
+          "type": "string"
+        },
+
+        "pgprove": {
+          "type": "string"
+        }
+
+      }
+
+    }
+
+  }
+}

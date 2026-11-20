@@ -1,0 +1,4 @@
+sql/V000__smoke_test.sql .. ok
+All tests successful.
+Files=1, Tests=1
+Result: PASS
