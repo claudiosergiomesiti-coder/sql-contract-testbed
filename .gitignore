@@ -1,0 +1,15 @@
+# Logs
+artifacts/*.log
+
+# Informes generados
+artifacts/*.json
+
+# Backups
+*.zip
+
+# Archivos locales
+*contraseña*
+*password*
+
+# VS Code
+.vscode/
