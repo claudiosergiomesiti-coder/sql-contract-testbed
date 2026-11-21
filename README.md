@@ -228,3 +228,77 @@ Estado
 
 PASS
 
+
+
+Hito Git
+
+Commit inicial estable:
+
+
+
+d54224cc8c0d28d5b9dd6cf9cb350d0425644564
+
+Descripción:
+
+
+
+Primer entorno PostgreSQL + pgTAP operativo
+
+
+
+
+
+Versión del proyecto
+
+Fecha de consolidación
+
+2026-11-20
+
+
+
+Estado
+
+v0.1 Operativa
+
+
+
+Commit Git
+
+d54224cc8c0d28d5b9dd6cf9cb350d0425644564
+
+Hitos alcanzados
+
+PostgreSQL 16.16 operativo
+
+pgTAP 1.3.4 operativo
+
+pg\_prove 3.37 operativo
+
+Docker Desktop operativo
+
+Docker Compose operativo
+
+WSL2 operativo
+
+Pipeline de pruebas funcionando
+
+Generación de informes JSON funcionando
+
+Validación de informes funcionando
+
+Repositorio Git inicializado
+
+Backups
+
+sql-contract-testbed-backup.zip
+
+sql-contract-testbed-postgres-real.zip
+
+sql-contract-testbed-before-pgtap.zip
+
+sql-contract-testbed-pgtap-working.zip
+
+sql-contract-testbed-v0.1-operativo.zip
+
+
+
