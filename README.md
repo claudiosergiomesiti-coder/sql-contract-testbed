@@ -302,3 +302,27 @@ sql-contract-testbed-v0.1-operativo.zip
 
 
 
+
+
+
+
+Versión: v0.1 Operativa
+
+
+
+Commit actual:
+
+1161252
+
+
+
+Commit base:
+
+d54224c
+
+
+
+Fecha:
+
+20/11/2026
+
