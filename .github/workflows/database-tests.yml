@@ -5,6 +5,7 @@ on:
     branches:
       - master
       - feature/github-pgtap
+      - feature/v1.1-reporting
 jobs:
 
   postgres-tests:
