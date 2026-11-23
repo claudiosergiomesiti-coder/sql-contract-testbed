@@ -80,3 +80,12 @@ jobs:
             -U postgres \
             -d contract_db \
             -f sql/V004__customers_tests.sql
+      - name: Ejecutar V005 Test
+        env:
+          PGPASSWORD: postgres
+        run: |
+          psql \
+            -h localhost \
+            -U postgres \
+            -d contract_db \
+            -f sql/V005__customers_constraints_tests.sql
