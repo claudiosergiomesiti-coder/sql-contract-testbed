@@ -6,15 +6,47 @@ on:
       - master
 
 jobs:
-  repository-check:
+
+  postgres-tests:
 
     runs-on: ubuntu-latest
 
+    services:
+
+      postgres:
+
+        image: postgres:16
+
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: contract_db
+
+        ports:
+          - 5432:5432
+
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
     steps:
+
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Show repository structure
+      - name: Install PostgreSQL Client
         run: |
-          pwd
-          ls -R
+          sudo apt-get update
+          sudo apt-get install -y postgresql-client
+
+      - name: Test Connection
+        env:
+          PGPASSWORD: postgres
+        run: |
+          psql \
+            -h localhost \
+            -U postgres \
+            -d contract_db \
+            -c "SELECT version();"
