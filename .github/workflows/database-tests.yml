@@ -71,3 +71,12 @@ jobs:
             -U postgres \
             -d contract_db \
             -c "SELECT COUNT(*) FROM information_schema.tables WHERE table_name = 'customers';"
+      - name: Run V004 Test
+        env:
+          PGPASSWORD: postgres
+        run: |
+          psql \
+            -h localhost \
+            -U postgres \
+            -d contract_db \
+            -f sql/V004__customers_tests.sql
