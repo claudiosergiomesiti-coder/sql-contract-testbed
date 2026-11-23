@@ -89,3 +89,22 @@ jobs:
             -U postgres \
             -d contract_db \
             -f sql/V005__customers_constraints_tests.sql
+      - name: Ejecutar V007 Test
+        env:
+          PGPASSWORD: postgres
+        run: |
+          psql \
+            -h localhost \
+            -U postgres \
+            -d contract_db \
+            -f sql/V007__customers_unique_tests.sql
+
+      - name: Ejecutar V009 Test
+        env:
+          PGPASSWORD: postgres
+        run: |
+          psql \
+            -h localhost \
+            -U postgres \
+            -d contract_db \
+            -f sql/V009__orders_fk_tests.sql
