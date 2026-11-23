@@ -55,6 +55,8 @@ jobs:
         env:
           PGPASSWORD: postgres
         run: |
+          echo "Contenido de bootstrap.sql"
+          cat sql/bootstrap.sql
           psql \
             -h localhost \
             -U postgres \
