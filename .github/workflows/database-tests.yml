@@ -85,3 +85,8 @@ jobs:
         run: |
           chmod +x scripts/generate-summary.sh
           ./scripts/generate-summary.sh
+      - name: Upload Test Summary
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-summary
+          path: artifacts/test-summary.json
