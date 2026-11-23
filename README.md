@@ -342,3 +342,35 @@ Base de datos: PostgreSQL 16.16
 
 pgTAP: 1.3.4
 
+
+
+
+
+sql-contract-testbed
+
+Versión estable actual:
+
+
+
+v1.0-pgtap-ci
+
+
+
+Características
+
+PostgreSQL 16
+
+pgTAP
+
+GitHub Actions
+
+bootstrap.sql
+
+all-tests.sql
+
+29 pruebas automatizadas
+
+Estado
+
+PASS ✅
+
