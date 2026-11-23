@@ -60,3 +60,12 @@ jobs:
             -U postgres \
             -d contract_db \
             -f sql/bootstrap.sql
+- name: Verify Customers Table
+        env:
+          PGPASSWORD: postgres
+        run: |
+          psql \
+            -h localhost \
+            -U postgres \
+            -d contract_db \
+            -c "\dt customers"
