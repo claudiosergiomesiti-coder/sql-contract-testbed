@@ -80,3 +80,7 @@ jobs:
             -U postgres \
             -d contract_db \
             -f sql/all-tests.sql
+      - name: Generate Test Summary
+        run: |
+          chmod +x scripts/generate-summary.sh
+          ./scripts/generate-summary.sh
