@@ -326,3 +326,19 @@ Fecha:
 
 20/11/2026
 
+
+
+
+
+Estado de la suite
+
+Estado: PASS
+
+Tests: 29
+
+Fallos: 0
+
+Base de datos: PostgreSQL 16.16
+
+pgTAP: 1.3.4
+
