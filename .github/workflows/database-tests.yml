@@ -60,7 +60,7 @@ jobs:
             -U postgres \
             -d contract_db \
             -f sql/bootstrap.sql
-- name: Verify Customers Table
+      - name: Verify Customers Table
         env:
           PGPASSWORD: postgres
         run: |
