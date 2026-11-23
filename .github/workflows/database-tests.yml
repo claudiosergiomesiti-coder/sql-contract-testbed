@@ -68,4 +68,4 @@ jobs:
             -h localhost \
             -U postgres \
             -d contract_db \
-            -c "\dt customers"
+            -c "SELECT COUNT(*) FROM information_schema.tables WHERE table_name = 'customers';"
