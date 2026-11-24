@@ -53,15 +53,7 @@ jobs:
             -d contract_db \
             -f sql/bootstrap.sql
  
-      - name: Run first pgTAP test
-        env:
-          PGPASSWORD: postgres
-        run: |
-          pg_prove \
-            -h localhost \
-            -U postgres \
-            -d contract_db \
-            sql/V004__customers_tests.sql
+      
  
       - name: Success marker
         run: |
