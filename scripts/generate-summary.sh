@@ -1,28 +1,25 @@
 #!/bin/bash
-
-echo "========== LOG =========="
-cat artifacts/test-output.log
-echo "========================="
-
-PASSED=$(grep -c "ok " artifacts/test-output.log || true)
-FAILED=$(grep -c "not ok " artifacts/test-output.log || true)
-
-if [ "$FAILED" -eq 0 ]; then
+ 
+FILES=$(grep -o "Files=[0-9]*" artifacts/pgprove-output.log | cut -d= -f2)
+TESTS=$(grep -o "Tests=[0-9]*" artifacts/pgprove-output.log | cut -d= -f2)
+ 
+if grep -q "Result: PASS" artifacts/pgprove-output.log
+then
   STATUS="PASS"
 else
   STATUS="FAIL"
 fi
-
+ 
 cat > artifacts/test-summary.json << EOF
 {
   "project": "sql-contract-testbed",
   "database": "contract_db",
   "suite": "V004-V023",
-  "passed": $PASSED,
-  "failed": $FAILED,
+  "files": $FILES,
+  "tests": $TESTS,
   "status": "$STATUS",
   "generated_at": "$(date -u +"%Y-%m-%dT%H:%M:%SZ")"
 }
 EOF
-
+ 
 cat artifacts/test-summary.json

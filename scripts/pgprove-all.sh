@@ -1,5 +1,7 @@
 #!/bin/bash
  
+mkdir -p artifacts
+ 
 pg_prove \
   -U postgres \
   -d contract_db \
@@ -12,5 +14,5 @@ pg_prove \
   /workspace/sql/V017__get_customer_email_function_tests.sql \
   /workspace/sql/V019__get_customer_total_spent_tests.sql \
   /workspace/sql/V021__get_customer_order_count_tests.sql \
-  /workspace/sql/V023__get_customer_tier_tests.sql
+  /workspace/sql/V023__get_customer_tier_tests.sql \
   | tee artifacts/pgprove-output.log
