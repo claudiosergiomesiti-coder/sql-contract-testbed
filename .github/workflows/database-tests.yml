@@ -46,7 +46,7 @@ jobs:
       - name: Install pgTAP
         run: |
           sudo apt-get update
-          apt-cache search pgtap
+          sudo apt-get install -y pgtap postgresql-18-pgtap
             
 
       - name: Test Connection
