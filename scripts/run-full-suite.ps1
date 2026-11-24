@@ -17,4 +17,10 @@ docker exec contract-postgres pg_prove `
   /workspace/sql/V033__payments_tests.sql `
   /workspace/sql/V035__get_customer_revenue_tests.sql `
   /workspace/sql/V037__top_customers_view_tests.sql `
-  /workspace/sql/V039__top_products_view_tests.sql
+  /workspace/sql/V039__top_products_view_tests.sql `
+  /workspace/sql/V041__get_total_revenue_tests.sql `
+  /workspace/sql/V043__get_top_customer_tests.sql `
+  /workspace/sql/V045__get_top_product_tests.sql `
+  /workspace/sql/V047__business_kpis_view_tests.sql `
+  /workspace/sql/V049__get_average_order_value_tests.sql `
+  /workspace/sql/V051__get_total_products_sold_tests.sql
