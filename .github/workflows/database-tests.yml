@@ -78,11 +78,20 @@ jobs:
         run: |
           mkdir -p artifacts
 
+          echo "===== START TESTS ====="
+
           psql \
             -h localhost \
             -U postgres \
             -d contract_db \
             -f sql/all-tests.sql | tee artifacts/test-output.log
+
+          echo "===== LOG FILE ====="
+
+          cat artifacts/test-output.log
+
+          echo "===== END LOG FILE ====="
+
       - name: Generate Test Summary
         run: |
           chmod +x scripts/generate-summary.sh
