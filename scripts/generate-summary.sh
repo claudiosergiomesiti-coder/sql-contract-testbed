@@ -1,7 +1,7 @@
 #!/bin/bash
 
-PASSED=$(grep -c "^ ok " artifacts/test-output.log || true)
-FAILED=$(grep -c "^ not ok " artifacts/test-output.log || true)
+PASSED=$(grep -c "ok " artifacts/test-output.log || true)
+FAILED=$(grep -c "not ok " artifacts/test-output.log || true)
 
 if [ "$FAILED" -eq 0 ]; then
   STATUS="PASS"
