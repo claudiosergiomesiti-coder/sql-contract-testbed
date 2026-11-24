@@ -3,9 +3,7 @@ name: Database Tests
 on:
   push:
     branches:
-      - master
-      - feature/github-pgtap
-      - feature/v1.1-reporting
+      - "*"
 jobs:
 
   postgres-tests:
@@ -45,6 +43,13 @@ jobs:
       - name: Check pgTAP Package
         run: |
           apt-cache search pgtap
+
+      - name: Install pgTAP
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            postgresql-16-pgtap \
+            pgtap
 
       - name: Test Connection
         env:
