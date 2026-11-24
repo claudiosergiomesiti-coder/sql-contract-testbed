@@ -8,3 +8,5 @@
 \i sql/V019__get_customer_total_spent_tests.sql
 \i sql/V021__get_customer_order_count_tests.sql
 \i sql/V023__get_customer_tier_tests.sql
+\i sql/V025__products_tests.sql
+\i sql/V027__order_items_tests.sql

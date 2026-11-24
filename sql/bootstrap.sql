@@ -5,4 +5,6 @@
 \i sql/V016__get_customer_email_function.sql
 \i sql/V018__get_customer_total_spent_function.sql
 \i sql/V020__get_customer_order_count_function.sql
-\i sql/V022__get_customer_tier_function.sql
+\i sql/V022__get_customer_tier_function.                              
+\i sql/V024__create_products.sqlsql
+\i sql/V026__create_order_items.sql
