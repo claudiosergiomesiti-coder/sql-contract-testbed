@@ -65,11 +65,19 @@ jobs:
         run: |
           echo "Contenido de bootstrap.sql"
           cat sql/bootstrap.sql
+
+          psql \
+            -h localhost \
+            -U postgres \
+            -d contract_db \
+            -c "CREATE EXTENSION IF NOT EXISTS pgtap;"
+
           psql \
             -h localhost \
             -U postgres \
             -d contract_db \
             -f sql/bootstrap.sql
+
       - name: Verify Customers Table
         env:
           PGPASSWORD: postgres
