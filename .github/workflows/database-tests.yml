@@ -76,11 +76,13 @@ jobs:
         env:
           PGPASSWORD: postgres
         run: |
+          mkdir -p artifacts
+
           psql \
             -h localhost \
             -U postgres \
             -d contract_db \
-            -f sql/all-tests.sql
+            -f sql/all-tests.sql | tee artifacts/test-output.log
       - name: Generate Test Summary
         run: |
           chmod +x scripts/generate-summary.sh
