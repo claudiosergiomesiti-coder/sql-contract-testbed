@@ -36,13 +36,15 @@ jobs:
 
       - name: Checkout
         uses: actions/checkout@v4
-
+      
       - name: Install PostgreSQL Client and pgTAP
         run: |
           sudo apt-get update
           sudo apt-get install -y \
             postgresql-client \
-            libtap-parser-sourcehandler-pgtap-perl
+            libtap-parser-sourcehandler-pgtap-perl \
+            pgtap
+      
       - name: Check pgTAP Package
         run: |
           apt-cache search pgtap
