@@ -43,6 +43,9 @@ jobs:
           sudo apt-get install -y \
             postgresql-client \
             libtap-parser-sourcehandler-pgtap-perl
+      - name: Check pgTAP Package
+        run: |
+          apt-cache search pgtap
 
       - name: Test Connection
         env:
