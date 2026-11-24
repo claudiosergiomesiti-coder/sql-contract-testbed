@@ -1,4 +1,8 @@
 #!/bin/bash
+
+echo "===== PGPROVE LOG ====="
+cat artifacts/pgprove-output.log
+echo "======================="
  
 FILES=$(grep -o "Files=[0-9]*" artifacts/pgprove-output.log | cut -d= -f2)
 TESTS=$(grep -o "Tests=[0-9]*" artifacts/pgprove-output.log | cut -d= -f2)
