@@ -28,11 +28,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
  
-      - name: Install PostgreSQL client
+      - name: Install test tools
         run: |
           sudo apt-get update
-          sudo apt-get install -y postgresql-client
- 
+          sudo apt-get install -y pgtap
+
       - name: Verify connection
         env:
           PGPASSWORD: postgres
@@ -53,15 +53,9 @@ jobs:
             -d contract_db \
             -f sql/bootstrap.sql
  
-      - name: Verify customers table
-        env:
-          PGPASSWORD: postgres
+      - name: Verify pg_prove installed
         run: |
-          psql \
-            -h localhost \
-            -U postgres \
-            -d contract_db \
-            -c "\dt"
+          pg_prove --version
  
       - name: Success marker
         run: |
