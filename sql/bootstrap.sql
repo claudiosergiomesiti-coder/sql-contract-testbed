@@ -11,3 +11,5 @@
 \i sql/V032__create_payments.sql
 \i sql/V034__get_customer_revenue_function.sql
 \i sql/V036__top_customers_view.sql
+\i sql/V036__top_customers_view.sql
+\i sql/V038__top_products_view.sql

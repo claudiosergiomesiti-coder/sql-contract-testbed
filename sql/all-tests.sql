@@ -13,3 +13,5 @@
 \i sql/V033__payments_tests.sql
 \i sql/V035__get_customer_revenue_tests.sql
 \i sql/V037__top_customers_view_tests.sql
+\i sql/V037__top_customers_view_tests.sql
+\i sql/V039__top_products_view_tests.sql
