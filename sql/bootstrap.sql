@@ -8,3 +8,5 @@
 \i sql/V022__get_customer_tier_function.                              
 \i sql/V024__create_products.sqlsql
 \i sql/V026__create_order_items.sql
+\i sql/V032__create_payments.sql
+\i sql/V034__get_customer_revenue_function.sql
