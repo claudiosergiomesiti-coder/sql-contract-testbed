@@ -16,6 +16,9 @@
 \i sql/V042__get_top_customer_function.sql
 \i sql/V044__get_top_product_function.sql
 \i sql/V046__business_kpis_view.sql
-
+\i sql/V052__monthly_revenue_view.sql
+\i sql/V052__monthly_revenue_view.sql
+\i sql/V054__top_5_customers_view.sql
+\i sql/V056__sales_dashboard_view.sql
 
 
