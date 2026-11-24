@@ -1,5 +1,9 @@
 #!/bin/bash
 
+echo "========== LOG =========="
+cat artifacts/test-output.log
+echo "========================="
+
 PASSED=$(grep -c "ok " artifacts/test-output.log || true)
 FAILED=$(grep -c "not ok " artifacts/test-output.log || true)
 
