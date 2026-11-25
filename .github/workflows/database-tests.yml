@@ -48,6 +48,14 @@ jobs:
         run: |
           docker cp ./sql/. contract-postgres:/workspace
  
+      - name: Show bootstrap file
+        run: |
+          docker exec contract-postgres cat /workspace/bootstrap.sql
+ 
+      - name: Show V003 file
+        run: |
+          docker exec contract-postgres cat /workspace/V003__create_customers.sql
+ 
       - name: Run bootstrap
         run: |
           docker exec contract-postgres psql \
