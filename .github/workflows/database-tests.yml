@@ -36,3 +36,19 @@ jobs:
             -U postgres \
             -d contract_db \
             -c "SELECT version();"
+
+      - name: Create pgTAP extension
+        run: |
+          docker exec contract-postgres psql \
+            -U postgres \
+            -d contract_db \
+            -c "CREATE EXTENSION IF NOT EXISTS pgtap;"
+
+      - name: Run bootstrap
+        run: |
+          docker cp sql/bootstrap.sql contract-postgres:/tmp/bootstrap.sql
+
+          docker exec contract-postgres psql \
+            -U postgres \
+            -d contract_db \
+            -f /tmp/bootstrap.sql
