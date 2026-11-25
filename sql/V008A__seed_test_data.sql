@@ -9,5 +9,5 @@ INSERT INTO orders (customer_id, total)
 VALUES
 (
   1,
-  100.00
+  150.00
 );
