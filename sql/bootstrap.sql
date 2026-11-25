@@ -1,6 +1,7 @@
 \i V003__create_customers.sql
 \i V006__customers_email_unique.sql
 \i V008__create_orders.sql
+\i V008A__seed_test_data.sql
 \i V014__customer_orders_view.sql
 \i V016__get_customer_email_function.sql
 \i V018__get_customer_total_spent_function.sql
