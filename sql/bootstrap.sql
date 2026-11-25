@@ -25,5 +25,7 @@
 \i sql/V066__sales_forecast_view.sql
 \i sql/V068__product_performance_view.sql
 \i sql/V070__executive_scorecard_view.sql
+\i sql/V072__customer_health_score_view.sql
+\i sql/V074__executive_alerts_view.sql
 
 
