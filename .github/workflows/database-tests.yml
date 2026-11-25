@@ -93,3 +93,17 @@ jobs:
             -U postgres \
             -d contract_db \
             /workspace/V007__customers_unique_tests.sql
+
+      - name: Run V009 test
+        run: |
+          docker exec contract-postgres pg_prove \
+            -U postgres \
+            -d contract_db \
+            /workspace/V009__orders_fk_tests.sql
+
+      - name: Run V010 test
+        run: |
+          docker exec contract-postgres pg_prove \
+            -U postgres \
+            -d contract_db \
+            /workspace/V010__customers_data_tests.sql
