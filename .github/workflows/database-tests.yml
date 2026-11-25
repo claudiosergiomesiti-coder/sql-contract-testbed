@@ -46,16 +46,14 @@ jobs:
  
       - name: Copy SQL folder
         run: |
-          docker exec contract-postgres mkdir -p /workspace/sql
- 
-          docker cp ./sql/. contract-postgres:/workspace/sql
+          docker cp ./sql/. contract-postgres:/workspace
  
       - name: Run bootstrap
         run: |
           docker exec contract-postgres psql \
             -U postgres \
             -d contract_db \
-            -f /workspace/sql/bootstrap.sql
+            -f /workspace/bootstrap.sql
  
       - name: Verify customers table
         run: |
@@ -69,4 +67,4 @@ jobs:
           docker exec contract-postgres pg_prove \
             -U postgres \
             -d contract_db \
-            /workspace/sql/V004__customers_tests.sql
+            /workspace/V004__customers_tests.sql
