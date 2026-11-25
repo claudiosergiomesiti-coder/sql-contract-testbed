@@ -282,3 +282,10 @@ jobs:
       - name: Run V075 test
         run: |
           docker exec contract-postgres pg_prove -U postgres -d contract_db /workspace/V075__executive_alerts_view_tests.sql
+
+      - name: Run all-tests.sql
+        run: |
+          docker exec contract-postgres psql \
+            -U postgres \
+            -d contract_db \
+            -f /workspace/all-tests.sql
