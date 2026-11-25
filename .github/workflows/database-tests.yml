@@ -44,14 +44,16 @@ jobs:
             -d contract_db \
             -c "CREATE EXTENSION IF NOT EXISTS pgtap;"
  
+      - name: Copy SQL folder
+        run: |
+          docker cp sql contract-postgres:/workspace
+ 
       - name: Run bootstrap
         run: |
-          docker cp sql/bootstrap.sql contract-postgres:/tmp/bootstrap.sql
- 
           docker exec contract-postgres psql \
             -U postgres \
             -d contract_db \
-            -f /tmp/bootstrap.sql
+            -f /workspace/sql/bootstrap.sql
  
       - name: Verify customers table
         run: |
