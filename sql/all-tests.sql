@@ -17,3 +17,17 @@
 \i sql/V041__get_total_revenue_tests.sql
 \i sql/V045__get_top_product_tests.sql
 \i sql/V047__business_kpis_view_tests.sql
+\i sql/V049__get_average_order_value_tests.sql
+\i sql/V051__get_total_products_sold_tests.sql
+\i sql/V053__monthly_revenue_view_tests.sql
+\i sql/V055__top_5_customers_view_tests.sql
+\i sql/V057__sales_dashboard_view_tests.sql
+\i sql/V059__customer_segmentation_view_tests.sql
+\i sql/V061__monthly_products_view_tests.sql
+\i sql/V063__customer_lifetime_value_view_tests.sql
+\i sql/V065__customer_retention_view_tests.sql
+\i sql/V067__sales_forecast_view_tests.sql
+\i sql/V069__product_performance_view_tests.sql
+\i sql/V071__executive_scorecard_view_tests.sql
+\i sql/V073__customer_health_score_view_tests.sql
+\i sql/V075__executive_alerts_view_tests.sql
