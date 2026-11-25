@@ -48,14 +48,7 @@ jobs:
         run: |
           docker cp ./sql/. contract-postgres:/workspace
  
-      - name: Show bootstrap file
-        run: |
-          docker exec contract-postgres cat /workspace/bootstrap.sql
- 
-      - name: Show V003 file
-        run: |
-          docker exec contract-postgres cat /workspace/V003__create_customers.sql
- 
+       
       - name: Run bootstrap
         run: |
           docker exec contract-postgres sh -c "
@@ -65,14 +58,7 @@ jobs:
               -d contract_db \
               -f bootstrap.sql
           "
- 
-      - name: Verify customers table
-        run: |
-          docker exec contract-postgres psql \
-            -U postgres \
-            -d contract_db \
-            -c "\dt"
- 
+        
       - name: Run V004 test
         run: |
           docker exec contract-postgres pg_prove \
