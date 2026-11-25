@@ -58,10 +58,13 @@ jobs:
  
       - name: Run bootstrap
         run: |
-          docker exec contract-postgres psql \
-            -U postgres \
-            -d contract_db \
-            -f /workspace/bootstrap.sql
+          docker exec contract-postgres sh -c "
+            cd /workspace &&
+            psql \
+              -U postgres \
+              -d contract_db \
+              -f bootstrap.sql
+          "
  
       - name: Verify customers table
         run: |
