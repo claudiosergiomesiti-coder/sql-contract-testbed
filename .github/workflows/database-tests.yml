@@ -128,3 +128,73 @@ jobs:
             -U postgres \
             -d contract_db \
             /workspace/V013__orders_data_tests.sql
+
+      - name: Run V015 test
+        run: |
+          docker exec contract-postgres pg_prove \
+            -U postgres \
+            -d contract_db \
+            /workspace/V015__customer_orders_view_tests.sql
+
+      - name: Run V017 test
+        run: |
+          docker exec contract-postgres pg_prove \
+            -U postgres \
+            -d contract_db \
+            /workspace/V017__get_customer_email_function_tests.sql
+
+      - name: Run V019 test
+        run: |
+          docker exec contract-postgres pg_prove \
+            -U postgres \
+            -d contract_db \
+            /workspace/V019__get_customer_total_spent_tests.sql
+
+      - name: Run V021 test
+        run: |
+          docker exec contract-postgres pg_prove \
+            -U postgres \
+            -d contract_db \
+            /workspace/V021__get_customer_order_count_tests.sql
+
+      - name: Run V023 test
+        run: |
+          docker exec contract-postgres pg_prove \
+            -U postgres \
+            -d contract_db \
+            /workspace/V023__get_customer_tier_tests.sql
+
+      - name: Run V025 test
+        run: |
+          docker exec contract-postgres pg_prove \
+            -U postgres \
+            -d contract_db \
+            /workspace/V025__products_tests.sql
+
+      - name: Run V027 test
+        run: |
+          docker exec contract-postgres pg_prove \
+            -U postgres \
+            -d contract_db \
+            /workspace/V027__order_items_tests.sql
+
+      - name: Run V029 test
+        run: |
+          docker exec contract-postgres pg_prove \
+            -U postgres \
+            -d contract_db \
+            /workspace/V029__get_order_total_tests.sql
+
+      - name: Run V031 test
+        run: |
+          docker exec contract-postgres pg_prove \
+            -U postgres \
+            -d contract_db \
+            /workspace/V031__order_details_view_tests.sql
+
+      - name: Run V033 test
+        run: |
+          docker exec contract-postgres pg_prove \
+            -U postgres \
+            -d contract_db \
+            /workspace/V033__payments_tests.sql
