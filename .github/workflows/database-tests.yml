@@ -238,3 +238,47 @@ jobs:
       - name: Run V053 test
         run: |
           docker exec contract-postgres pg_prove -U postgres -d contract_db /workspace/V053__monthly_revenue_view_tests.sql
+
+      - name: Run V055 test
+        run: |
+          docker exec contract-postgres pg_prove -U postgres -d contract_db /workspace/V055__top_5_customers_view_tests.sql
+
+      - name: Run V057 test
+        run: |
+          docker exec contract-postgres pg_prove -U postgres -d contract_db /workspace/V057__sales_dashboard_view_tests.sql
+
+      - name: Run V059 test
+        run: |
+          docker exec contract-postgres pg_prove -U postgres -d contract_db /workspace/V059__customer_segmentation_view_tests.sql
+
+      - name: Run V061 test
+        run: |
+          docker exec contract-postgres pg_prove -U postgres -d contract_db /workspace/V061__monthly_products_view_tests.sql
+
+      - name: Run V063 test
+        run: |
+          docker exec contract-postgres pg_prove -U postgres -d contract_db /workspace/V063__customer_lifetime_value_view_tests.sql
+
+      - name: Run V065 test
+        run: |
+          docker exec contract-postgres pg_prove -U postgres -d contract_db /workspace/V065__customer_retention_view_tests.sql
+
+      - name: Run V067 test
+        run: |
+          docker exec contract-postgres pg_prove -U postgres -d contract_db /workspace/V067__sales_forecast_view_tests.sql
+
+      - name: Run V069 test
+        run: |
+          docker exec contract-postgres pg_prove -U postgres -d contract_db /workspace/V069__product_performance_view_tests.sql
+
+      - name: Run V071 test
+        run: |
+          docker exec contract-postgres pg_prove -U postgres -d contract_db /workspace/V071__executive_scorecard_view_tests.sql
+
+      - name: Run V073 test
+        run: |
+          docker exec contract-postgres pg_prove -U postgres -d contract_db /workspace/V073__customer_health_score_view_tests.sql
+
+      - name: Run V075 test
+        run: |
+          docker exec contract-postgres pg_prove -U postgres -d contract_db /workspace/V075__executive_alerts_view_tests.sql
