@@ -198,3 +198,43 @@ jobs:
             -U postgres \
             -d contract_db \
             /workspace/V033__payments_tests.sql
+
+      - name: Run V035 test
+        run: |
+          docker exec contract-postgres pg_prove -U postgres -d contract_db /workspace/V035__get_customer_revenue_tests.sql
+
+      - name: Run V037 test
+        run: |
+          docker exec contract-postgres pg_prove -U postgres -d contract_db /workspace/V037__top_customers_view_tests.sql
+
+      - name: Run V039 test
+        run: |
+          docker exec contract-postgres pg_prove -U postgres -d contract_db /workspace/V039__top_products_view_tests.sql
+
+      - name: Run V041 test
+        run: |
+          docker exec contract-postgres pg_prove -U postgres -d contract_db /workspace/V041__get_total_revenue_tests.sql
+
+      - name: Run V043 test
+        run: |
+          docker exec contract-postgres pg_prove -U postgres -d contract_db /workspace/V043__get_top_customer_tests.sql
+
+      - name: Run V045 test
+        run: |
+          docker exec contract-postgres pg_prove -U postgres -d contract_db /workspace/V045__get_top_product_tests.sql
+
+      - name: Run V047 test
+        run: |
+          docker exec contract-postgres pg_prove -U postgres -d contract_db /workspace/V047__business_kpis_view_tests.sql
+
+      - name: Run V049 test
+        run: |
+          docker exec contract-postgres pg_prove -U postgres -d contract_db /workspace/V049__get_average_order_value_tests.sql
+
+      - name: Run V051 test
+        run: |
+          docker exec contract-postgres pg_prove -U postgres -d contract_db /workspace/V051__get_total_products_sold_tests.sql
+
+      - name: Run V053 test
+        run: |
+          docker exec contract-postgres pg_prove -U postgres -d contract_db /workspace/V053__monthly_revenue_view_tests.sql
