@@ -20,5 +20,7 @@
 \i sql/V052__monthly_revenue_view.sql
 \i sql/V054__top_5_customers_view.sql
 \i sql/V056__sales_dashboard_view.sql
+\i sql/V062__customer_lifetime_value_view.sql
+\i sql/V064__customer_retention_view.sql
 
 
