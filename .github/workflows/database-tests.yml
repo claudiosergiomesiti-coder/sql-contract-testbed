@@ -1,21 +1,38 @@
-name: Test Docker Build
-
+name: PostgreSQL Container Test
+ 
 on:
   workflow_dispatch:
   push:
-
+ 
 jobs:
-  docker-build:
+  postgres-test:
     runs-on: ubuntu-latest
-
+ 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Build PostgreSQL pgTAP image
+ 
+      - name: Build image
         run: |
           docker build -t contract-postgres ./docker
-
-      - name: Verify image
+ 
+      - name: Start container
         run: |
-          docker images | grep contract-postgres
+          docker run -d \
+            --name contract-postgres \
+            -e POSTGRES_USER=postgres \
+            -e POSTGRES_PASSWORD=postgres \
+            -e POSTGRES_DB=contract_db \
+            -p 5432:5432 \
+            contract-postgres
+ 
+      - name: Wait for PostgreSQL
+        run: |
+          sleep 20
+ 
+      - name: Verify PostgreSQL
+        run: |
+          docker exec contract-postgres psql \
+            -U postgres \
+            -d contract_db \
+            -c "SELECT version();"
