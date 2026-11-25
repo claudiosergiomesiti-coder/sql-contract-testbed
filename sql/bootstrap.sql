@@ -9,6 +9,8 @@
 \i V022__get_customer_tier_function.sql
 \i V024__create_products.sql
 \i V026__create_order_items.sql
+\i V028__get_order_total_function.sql
+\i V030__order_details_view.sql
 \i V032__create_payments.sql
 \i V034__get_customer_revenue_function.sql
 \i V036__top_customers_view.sql
