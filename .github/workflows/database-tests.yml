@@ -107,3 +107,24 @@ jobs:
             -U postgres \
             -d contract_db \
             /workspace/V010__customers_data_tests.sql
+
+      - name: Run V011 test
+        run: |
+          docker exec contract-postgres pg_prove \
+            -U postgres \
+            -d contract_db \
+            /workspace/V011__duplicate_email_tests.sql
+
+      - name: Run V012 test
+        run: |
+          docker exec contract-postgres pg_prove \
+            -U postgres \
+            -d contract_db \
+            /workspace/V012__duplicate_email_exists_test.sql
+
+      - name: Run V013 test
+        run: |
+          docker exec contract-postgres pg_prove \
+            -U postgres \
+            -d contract_db \
+            /workspace/V013__orders_data_tests.sql
