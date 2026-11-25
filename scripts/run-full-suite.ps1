@@ -30,7 +30,8 @@ $tests = @(
 "/workspace/sql/V063__customer_lifetime_value_view_tests.sql",
 "/workspace/sql/V065__customer_retention_view_tests.sql"
 "/workspace/sql/V067__sales_forecast_view_tests.sql",
-"/workspace/sql/V069__product_performance_view_tests.sql"
+"/workspace/sql/V069__product_performance_view_tests.sql",
+"/workspace/sql/V071__executive_scorecard_view_tests.sql"
 )
  
 docker exec contract-postgres pg_prove `

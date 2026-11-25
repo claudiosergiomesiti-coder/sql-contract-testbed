@@ -24,5 +24,6 @@
 \i sql/V064__customer_retention_view.sql
 \i sql/V066__sales_forecast_view.sql
 \i sql/V068__product_performance_view.sql
+\i sql/V070__executive_scorecard_view.sql
 
 
