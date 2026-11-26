@@ -1,82 +1,66 @@
-name: Database Tests
-
+name: PostgreSQL Container Test
+ 
 on:
+  workflow_dispatch:
   push:
-    branches:
-      - master
-      - feature/github-pgtap
+ 
 jobs:
-
-  postgres-tests:
-
+  postgres-test:
     runs-on: ubuntu-latest
-
-    services:
-
-      postgres:
-
-        image: postgres:16
-
-        env:
-          POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: postgres
-          POSTGRES_DB: contract_db
-
-        ports:
-          - 5432:5432
-
-        options: >-
-          --health-cmd pg_isready
-          --health-interval 10s
-          --health-timeout 5s
-          --health-retries 5
-
+ 
     steps:
-
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Install PostgreSQL Client
+ 
+      - name: Build image
         run: |
-          sudo apt-get update
-          sudo apt-get install -y postgresql-client
-
-      - name: Test Connection
-        env:
-          PGPASSWORD: postgres
+          docker build -t contract-postgres ./docker
+ 
+      - name: Start container
         run: |
-          psql \
-            -h localhost \
+          docker run -d \
+            --name contract-postgres \
+            -e POSTGRES_USER=postgres \
+            -e POSTGRES_PASSWORD=postgres \
+            -e POSTGRES_DB=contract_db \
+            -p 5432:5432 \
+            contract-postgres
+ 
+      - name: Wait for PostgreSQL
+        run: |
+          sleep 20
+ 
+      - name: Verify PostgreSQL
+        run: |
+          docker exec contract-postgres psql \
             -U postgres \
             -d contract_db \
             -c "SELECT version();"
-
-      - name: Build Database Schema
-        env:
-          PGPASSWORD: postgres
+ 
+      - name: Create pgTAP extension
         run: |
-          echo "Contenido de bootstrap.sql"
-          cat sql/bootstrap.sql
-          psql \
-            -h localhost \
+          docker exec contract-postgres psql \
             -U postgres \
             -d contract_db \
-            -f sql/bootstrap.sql
-      - name: Verify Customers Table
-        env:
-          PGPASSWORD: postgres
+            -c "CREATE EXTENSION IF NOT EXISTS pgtap;"
+ 
+      - name: Copy SQL folder
         run: |
-          psql \
-            -h localhost \
+          docker cp ./sql/. contract-postgres:/workspace
+ 
+      - name: Run bootstrap
+        run: |
+          docker exec contract-postgres sh -c "
+            cd /workspace &&
+            psql \
+              -U postgres \
+              -d contract_db \
+              -f bootstrap.sql
+          "
+ 
+      - name: Ejecutar suite completa
+        run: |
+          docker exec contract-postgres psql \
             -U postgres \
             -d contract_db \
-            -c "SELECT COUNT(*) FROM information_schema.tables WHERE table_name = 'customers';"
-      - name: Run Full Test Suite
-        env:
-          PGPASSWORD: postgres
-        run: |
-          psql \
-            -h localhost \
-            -U postgres \
-            -d contract_db \
-            -f sql/all-tests.sql
+            -f /workspace/all-tests.sql

@@ -1,0 +1,63 @@
+name: PostgreSQL Container Test
+ 
+on:
+  workflow_dispatch:
+  push:
+ 
+jobs:
+  postgres-test:
+    runs-on: ubuntu-latest
+ 
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+ 
+      - name: Build image
+        run: |
+          docker build -t contract-postgres ./docker
+ 
+      - name: Start container
+        run: |
+          docker run -d \
+            --name contract-postgres \
+            -e POSTGRES_USER=postgres \
+            -e POSTGRES_PASSWORD=postgres \
+            -e POSTGRES_DB=contract_db \
+            -p 5432:5432 \
+            contract-postgres
+ 
+      - name: Wait for PostgreSQL
+        run: |
+          sleep 20
+ 
+      - name: Verify PostgreSQL
+        run: |
+          docker exec contract-postgres psql \
+            -U postgres \
+            -d contract_db \
+            -c "SELECT version();"
+ 
+      - name: Create pgTAP extension
+        run: |
+          docker exec contract-postgres psql \
+            -U postgres \
+            -d contract_db \
+            -c "CREATE EXTENSION IF NOT EXISTS pgtap;"
+ 
+      - name: Run bootstrap
+        run: |
+          docker cp sql/bootstrap.sql contract-postgres:/tmp/bootstrap.sql
+ 
+          docker exec contract-postgres psql \
+            -U postgres \
+            -d contract_db \
+            -f /tmp/bootstrap.sql
+ 
+      - name: Run V004 test
+        run: |
+          docker cp sql/V004__customers_tests.sql contract-postgres:/tmp/V004.sql
+ 
+          docker exec contract-postgres pg_prove \
+            -U postgres \
+            -d contract_db \
+            /tmp/V004.sql

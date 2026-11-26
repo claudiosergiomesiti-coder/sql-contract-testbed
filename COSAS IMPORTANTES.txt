@@ -1,0 +1,20 @@
+DONDE SE GUARDAN LAS ETIQUETAS DEL PROYECTO Y COMO VERLAS
+
+COMANDO PS:
+
+git tag 
+
+APARECE ALGO COMO :
+
+v0.2-ci-bootstrap
+v0.3-github-bootstrap-pass
+v1.0-pgtap-ci
+v1.1-reporting
+v1.3-business-model
+v1.4-analytics
+v1.5-executive-metrics
+v2-github-actions-baseline
+
+Para seguir desarrollando vuelves a tu rama:
+
+git checkout feature/github-actions-pgtap
