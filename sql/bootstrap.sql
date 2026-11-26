@@ -44,5 +44,7 @@
 \i V092__restock_products_view.sql
 \i V094__out_of_stock_count_function.sql
 \i V096__inventory_summary_view.sql
-
+\i V098__customer_loyalty_view.sql
+\i V100__customer_points_function.sql
+\i V102__top_loyal_customers_view.sql
 

@@ -42,3 +42,8 @@
 \i sql/V093__restock_products_view_tests.sql
 \i sql/V095__out_of_stock_count_tests.sql
 \i sql/V097__inventory_summary_view_tests.sql
+\i sql/V099__customer_loyalty_view_tests.sql
+\i sql/V101__customer_points_function_tests.sql
+\i sql/V103__top_loyal_customers_view_tests.sql
+
+
