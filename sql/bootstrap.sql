@@ -53,4 +53,9 @@
 \i V110__create_purchase_orders.sql
 \i V112__purchase_order_total_function.sql
 \i V114__supplier_performance_view.sql
+\i V116__total_supplier_spend_function.sql
+\i V118__profitability_view.sql
+\i V120__financial_dashboard_view.sql
+
+
 

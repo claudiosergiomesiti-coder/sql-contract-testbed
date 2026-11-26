@@ -556,3 +556,25 @@ Módulos implementados
 
 ✅ Suppliers
 
+
+
+
+
+Versión actual
+
+
+
+v2.2-business-platform
+
+
+
+✅ Suppliers
+
+✅ Purchase Orders
+
+✅ Inventory Intelligence
+
+✅ Customer Loyalty
+
+
+

@@ -51,7 +51,9 @@
 \i sql/V111__purchase_orders_tests.sql
 \i sql/V113__purchase_order_total_tests.sql
 \i sql/V115__supplier_performance_view_tests.sql
-
+\i sql/V117__total_supplier_spend_tests.sql
+\i sql/V119__profitability_view_tests.sql
+\i sql/V121__financial_dashboard_view_tests.sql
 
 
 
