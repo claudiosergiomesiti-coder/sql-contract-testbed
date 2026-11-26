@@ -1,164 +1,204 @@
-SQL Contract Testbed
+\# SQL Contract Testbed
 
-Estado actual:
+&#x20;
 
+\## Descripción
 
+&#x20;
 
-Bootstrap funcional.
+Entorno de pruebas automatizadas para contratos SQL utilizando PostgreSQL, pgTAP y pg\_prove.
 
-Parser TAP funcional.
+&#x20;
 
-Informe JSON funcional.
+El proyecto permite validar esquemas, restricciones, funciones, vistas y reglas de negocio mediante una suite automatizada ejecutable tanto en entorno local como en GitHub Actions.
 
-Artefactos disponibles:
+&#x20;
 
+\---
 
+&#x20;
 
-postgres-version.txt
+\## Estado actual
 
-pgtap-version.txt
+&#x20;
 
-pgprove-version.txt
+\*\*Versión estable:\*\* `v1.0-pgtap-ci`
 
-pgprove-sample.log
+&#x20;
 
-validation-report.json
+\*\*Estado general:\*\* ✅ PASS
 
-Estado: PASS
+&#x20;
 
+\*\*Trabajo completo:\*\* ✅
 
+&#x20;
 
-Estado actual
+\*\*GitHub Actions:\*\* ✅
 
-Entorno
+&#x20;
 
-Windows 11
+\*\*Suite automatizada:\*\* ✅
 
-WSL2
+&#x20;
 
-Ubuntu
+\---
 
-Docker Desktop
+&#x20;
 
-Docker Compose
+\## Tecnologías
 
-PostgreSQL 16.16
+&#x20;
 
-Validado
+\- PostgreSQL 16.16
 
-bootstrap.ps1
+\- pgTAP 1.3.4
 
-parse-tap.ps1
+\- pg\_prove 3.37
 
-generate-report.ps1
+\- Docker Desktop
 
-validate-report.ps1
+\- Docker Compose
 
-PostgreSQL real
+\- WSL2
 
-Verificado mediante:
+\- Ubuntu
 
+\- GitHub Actions
 
+&#x20;
+
+\---
+
+&#x20;
+
+\## Infraestructura validada
+
+&#x20;
+
+\### Sistema
+
+&#x20;
+
+\- Windows 11
+
+\- WSL2
+
+\- Ubuntu
+
+&#x20;
+
+\### Contenedores
+
+&#x20;
+
+\- Docker Desktop operativo
+
+\- Docker Compose operativo
+
+&#x20;
+
+\### Base de datos
+
+&#x20;
+
+Verificada mediante:
+
+&#x20;
+
+```sql
 
 SELECT version();
 
-Resultado:
+```
 
-
-
-PostgreSQL 16.16 (Debian 16.16-1.pgdg13+1)
-
-
-
-Hito alcanzado
-
-Fecha: 18/11/2026
-
-
-
-Entorno real operativo
-
-WSL2 instalado
-
-Ubuntu instalado
-
-Docker Desktop operativo
-
-Docker Compose operativo
-
-PostgreSQL 16.16 operativo
-
-Verificaciones realizadas
-
-SELECT version();
+&#x20;
 
 Resultado:
 
+&#x20;
 
+```text
 
 PostgreSQL 16.16 (Debian 16.16-1.pgdg13+1)
 
+```
 
-
-\\l
+&#x20;
 
 Bases verificadas:
 
+&#x20;
 
+\- contract\_db
 
-contract\_db
+\- postgres
 
-postgres
+\- template0
 
-template0
+\- template1
 
-template1
+&#x20;
 
+\---
 
+&#x20;
 
-Hito: pgTAP real
+\## pgTAP
 
-Fecha: 18/11/2026
+&#x20;
 
+Extensiones instaladas:
 
+&#x20;
 
-Extensiones instaladas
+```sql
 
 SELECT extname, extversion
 
 FROM pg\_extension;
 
+```
+
+&#x20;
+
 Resultado:
 
+&#x20;
 
+| Extension | Version |
 
-Extension	Version
+|-----------|----------|
 
-plpgsql	1.0
+| plpgsql | 1.0 |
 
-pgtap	1.3.4
+| pgtap | 1.3.4 |
 
-Estado
+&#x20;
 
-PostgreSQL 16.16 operativo
+Estado:
 
-pgTAP 1.3.4 operativo
+&#x20;
 
-Docker Desktop operativo
+\- PostgreSQL 16.16 ✅
 
-WSL2 operativo
+\- pgTAP 1.3.4 ✅
 
+&#x20;
 
+\---
 
-Hito: Primera prueba pgTAP real
+&#x20;
 
-Fecha: 18/11/2026
+\## Primera prueba pgTAP
 
-
+&#x20;
 
 Prueba ejecutada:
 
+&#x20;
 
+```sql
 
 SELECT plan(1);
 
@@ -166,211 +206,295 @@ SELECT pass('Hello pgTAP');
 
 SELECT \* FROM finish();
 
+```
+
+&#x20;
+
 Resultado:
 
+&#x20;
 
+```text
 
 1..1
 
 ok 1 - Hello pgTAP
 
+```
+
+&#x20;
+
 Estado:
 
+&#x20;
 
+\- PostgreSQL ✅
 
-PostgreSQL 16.16 ✅
+\- pgTAP ✅
 
-pgTAP 1.3.4 ✅
+\- Primera prueba ejecutada ✅
 
-Primera prueba ejecutada ✅
+&#x20;
 
+\---
 
+&#x20;
 
-Estado actual
+\## Componentes validados
 
-Infraestructura
+&#x20;
 
-Windows 11
+\### Scripts PowerShell
 
-WSL2
+&#x20;
 
-Ubuntu
+\- bootstrap.ps1
 
-Docker Desktop
+\- parse-tap.ps1
 
-Docker Compose
+\- generate-report.ps1
 
-Base de datos
+\- validate-report.ps1
 
-PostgreSQL 16.16
+&#x20;
 
-pgTAP 1.3.4
+\### Artefactos generados
 
-pg\_prove 3.37
+&#x20;
 
-Artefactos
+\- postgres-version.txt
 
-bootstrap.ps1
+\- pgtap-version.txt
 
-parse-tap.ps1
+\- pgprove-version.txt
 
-generate-report.ps1
+\- pgprove-sample.log
 
-validate-report.ps1
+\- validation-report.json
 
-Pruebas reales
+&#x20;
 
-V001\_\_pgtap\_smoke\_test.sql
+\---
 
-V002\_\_pgprove\_smoke\_test.sql
+&#x20;
 
-Estado
+\## Suite de pruebas
+
+&#x20;
+
+Estado actual:
+
+&#x20;
+
+```text
 
 PASS
 
+```
 
+&#x20;
 
-Hito Git
+Resumen:
 
-Commit inicial estable:
+&#x20;
 
+\- Tests ejecutados: 29
 
+\- Fallos: 0
+
+&#x20;
+
+Incluye validaciones de:
+
+&#x20;
+
+\- Tablas
+
+\- Restricciones
+
+\- Claves foráneas
+
+\- Datos de prueba
+
+\- Funciones SQL
+
+\- Vistas SQL
+
+\- Reglas de negocio
+
+&#x20;
+
+\---
+
+&#x20;
+
+\## CI/CD
+
+&#x20;
+
+Pipeline automatizado mediante GitHub Actions.
+
+&#x20;
+
+Workflow actual:
+
+&#x20;
+
+1\. Checkout
+
+2\. Build image
+
+3\. Start container
+
+4\. Wait PostgreSQL
+
+5\. Verify PostgreSQL
+
+6\. Create pgTAP extension
+
+7\. Copy SQL folder
+
+8\. Run bootstrap
+
+9\. Ejecutar suite completa
+
+&#x20;
+
+Resultado:
+
+&#x20;
+
+✅ Trabajo completo
+
+&#x20;
+
+✅ Suite completa ejecutada
+
+&#x20;
+
+✅ all-tests.sql operativo
+
+&#x20;
+
+✅ bootstrap.sql operativo
+
+&#x20;
+
+\---
+
+&#x20;
+
+\## Git
+
+&#x20;
+
+\### Commit base estable
+
+&#x20;
+
+```text
 
 d54224cc8c0d28d5b9dd6cf9cb350d0425644564
+
+```
+
+&#x20;
 
 Descripción:
 
+&#x20;
 
+Primer entorno PostgreSQL + pgTAP operativo.
 
-Primer entorno PostgreSQL + pgTAP operativo
+&#x20;
 
+\### Versión estable actual
 
+&#x20;
 
-
-
-Versión del proyecto
-
-Fecha de consolidación
-
-2026-11-20
-
-
-
-Estado
-
-v0.1 Operativa
-
-
-
-Commit Git
-
-d54224cc8c0d28d5b9dd6cf9cb350d0425644564
-
-Hitos alcanzados
-
-PostgreSQL 16.16 operativo
-
-pgTAP 1.3.4 operativo
-
-pg\_prove 3.37 operativo
-
-Docker Desktop operativo
-
-Docker Compose operativo
-
-WSL2 operativo
-
-Pipeline de pruebas funcionando
-
-Generación de informes JSON funcionando
-
-Validación de informes funcionando
-
-Repositorio Git inicializado
-
-Backups
-
-sql-contract-testbed-backup.zip
-
-sql-contract-testbed-postgres-real.zip
-
-sql-contract-testbed-before-pgtap.zip
-
-sql-contract-testbed-pgtap-working.zip
-
-sql-contract-testbed-v0.1-operativo.zip
-
-
-
-
-
-
-
-Versión: v0.1 Operativa
-
-
-
-Commit actual:
-
-1161252
-
-
-
-Commit base:
-
-d54224c
-
-
-
-Fecha:
-
-20/11/2026
-
-
-
-
-
-Estado de la suite
-
-Estado: PASS
-
-Tests: 29
-
-Fallos: 0
-
-Base de datos: PostgreSQL 16.16
-
-pgTAP: 1.3.4
-
-
-
-
-
-sql-contract-testbed
-
-Versión estable actual:
-
-
+```text
 
 v1.0-pgtap-ci
 
+```
 
+&#x20;
 
-Características
+\---
 
-PostgreSQL 16
+&#x20;
 
-pgTAP
+\## Backups
 
-GitHub Actions
+&#x20;
 
-bootstrap.sql
+\- sql-contract-testbed-backup.zip
 
-all-tests.sql
+\- sql-contract-testbed-postgres-real.zip
 
-29 pruebas automatizadas
+\- sql-contract-testbed-before-pgtap.zip
 
-Estado
+\- sql-contract-testbed-pgtap-working.zip
 
-PASS ✅
+\- sql-contract-testbed-v0.1-operativo.zip
+
+&#x20;
+
+\---
+
+&#x20;
+
+\## Hitos alcanzados
+
+&#x20;
+
+✅ PostgreSQL 16.16 operativo
+
+&#x20;
+
+✅ pgTAP 1.3.4 operativo
+
+&#x20;
+
+✅ pg\_prove 3.37 operativo
+
+&#x20;
+
+✅ Docker Desktop operativo
+
+&#x20;
+
+✅ Docker Compose operativo
+
+&#x20;
+
+✅ WSL2 operativo
+
+&#x20;
+
+✅ Generación de informes JSON
+
+&#x20;
+
+✅ Validación de informes
+
+&#x20;
+
+✅ bootstrap.sql
+
+&#x20;
+
+✅ all-tests.sql
+
+&#x20;
+
+✅ GitHub Actions
+
+&#x20;
+
+✅ Suite automatizada
+
+&#x20;
+
+✅ v1.0-pgtap-ci
 
