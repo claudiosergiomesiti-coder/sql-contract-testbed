@@ -239,3 +239,20 @@
  
 \i V162__user_count_function.sql
 
+
+-- =====================================================
+-- SECURITY & ACCESS CONTROL
+-- =====================================================
+
+
+\i V164__create_permissions.sql
+ 
+\i V166__permission_summary_view.sql
+ 
+\i V168__permission_count_function.sql
+
+
+
+
+
+

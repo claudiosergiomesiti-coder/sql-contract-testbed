@@ -236,6 +236,19 @@
 \i sql/V163__user_count_function_tests.sql
 
 
+-- =====================================================
+-- SECURITY & ACCESS CONTROL TESTS
+-- =====================================================
+
+
+\i sql/V165__permissions_tests.sql
+ 
+\i sql/V167__permission_summary_view_tests.sql
+ 
+\i sql/V169__permission_count_function_tests.sql
+
+
+
 
 
 
