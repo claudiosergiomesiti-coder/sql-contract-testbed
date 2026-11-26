@@ -452,7 +452,15 @@ v2-github-actions-baseline
 
 v2.1-github-actions-stable
 
-&#x20;
+v2.3-financial-analytics
+
+
+
+
+
+
+
+
 
 \## Backups
 
@@ -575,6 +583,24 @@ v2.2-business-platform
 ✅ Inventory Intelligence
 
 ✅ Customer Loyalty
+
+✅ Financial Analytics
+
+✅ Profitability
+
+✅ Financial Dashboard
+
+✅ Supplier Spend Analytics
+
+
+
+
+
+
+
+
+
+
 
 
 

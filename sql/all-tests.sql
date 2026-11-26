@@ -54,6 +54,8 @@
 \i sql/V117__total_supplier_spend_tests.sql
 \i sql/V119__profitability_view_tests.sql
 \i sql/V121__financial_dashboard_view_tests.sql
-
+\i sql/V123__warehouse_locations_tests.sql
+\i sql/V125__inventory_by_location_tests.sql
+\i sql/V127__warehouse_capacity_tests.sql
 
 

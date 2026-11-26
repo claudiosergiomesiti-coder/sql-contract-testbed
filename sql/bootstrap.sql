@@ -56,6 +56,8 @@
 \i V116__total_supplier_spend_function.sql
 \i V118__profitability_view.sql
 \i V120__financial_dashboard_view.sql
-
+\i V122__create_warehouse_locations.sql
+\i V124__inventory_by_location_view.sql
+\i V126__warehouse_capacity_function.sql
 
 
