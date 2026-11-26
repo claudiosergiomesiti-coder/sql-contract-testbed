@@ -308,4 +308,20 @@
 \i sql/V199__security_event_count_function_tests.sql
 
 
+-- =====================================================
+-- SECURITY & ACCESS CONTROL TESTS
+-- =====================================================
+
+
+\i sql/V201__mfa_methods_tests.sql
+ 
+\i sql/V203__mfa_summary_view_tests.sql
+ 
+\i sql/V205__mfa_method_count_function_tests.sql
+
+
+
+
+
+
 

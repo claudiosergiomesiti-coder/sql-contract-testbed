@@ -312,4 +312,20 @@
 \i V198__security_event_count_function.sql
 
 
+-- =====================================================
+-- SECURITY & ACCESS CONTROL
+-- =====================================================
+
+
+\i V200__create_mfa_methods.sql
+ 
+\i V202__mfa_summary_view.sql
+ 
+\i V204__mfa_method_count_function.sql
+
+
+
+
+
+
 
