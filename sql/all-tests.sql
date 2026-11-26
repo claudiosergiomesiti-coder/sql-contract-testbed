@@ -57,5 +57,7 @@
 \i sql/V123__warehouse_locations_tests.sql
 \i sql/V125__inventory_by_location_tests.sql
 \i sql/V127__warehouse_capacity_tests.sql
-
+\i sql/V129__shipments_tests.sql
+\i sql/V131__shipment_status_view_tests.sql
+\i sql/V133__shipment_count_function_tests.sql
 

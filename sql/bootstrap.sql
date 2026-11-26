@@ -59,5 +59,7 @@
 \i V122__create_warehouse_locations.sql
 \i V124__inventory_by_location_view.sql
 \i V126__warehouse_capacity_function.sql
-
+\i V128__create_shipments.sql
+\i V130__shipment_status_view.sql
+\i V132__shipment_count_function.sql
 
