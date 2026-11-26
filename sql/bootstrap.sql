@@ -47,4 +47,6 @@
 \i V098__customer_loyalty_view.sql
 \i V100__customer_points_function.sql
 \i V102__top_loyal_customers_view.sql
-
+\i V104__create_suppliers.sql
+\i V106__supplier_products_view.sql
+\i V108__supplier_count_function.sql

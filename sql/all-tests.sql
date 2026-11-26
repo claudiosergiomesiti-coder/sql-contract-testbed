@@ -45,5 +45,7 @@
 \i sql/V099__customer_loyalty_view_tests.sql
 \i sql/V101__customer_points_function_tests.sql
 \i sql/V103__top_loyal_customers_view_tests.sql
-
+\i sql/V105__suppliers_tests.sql
+\i sql/V107__supplier_products_view_tests.sql
+\i sql/V109__supplier_count_function_tests.sql
 
