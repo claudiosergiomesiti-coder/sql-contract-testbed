@@ -41,6 +41,8 @@
 \i V086__inventory_seed_data.sql
 \i V088__inventory_status_view.sql
 \i V090__low_stock_products_count_function.sql
-
+\i V092__restock_products_view.sql
+\i V094__out_of_stock_count_function.sql
+\i V096__inventory_summary_view.sql
 
 
