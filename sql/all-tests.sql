@@ -296,5 +296,16 @@
 \i sql/V193__login_event_count_function_tests.sql
 
 
+-- =====================================================
+-- SECURITY & ACCESS CONTROL TESTS
+-- =====================================================
+
+
+\i sql/V195__password_policies_tests.sql
+ 
+\i sql/V197__account_security_view_tests.sql
+ 
+\i sql/V199__security_event_count_function_tests.sql
+
 
 

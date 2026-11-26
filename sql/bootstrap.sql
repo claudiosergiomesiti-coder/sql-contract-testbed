@@ -299,3 +299,17 @@
  
 \i V192__login_event_count_function.sql
 
+
+-- =====================================================
+-- SECURITY & ACCESS CONTROL
+-- =====================================================
+
+
+\i V194__create_password_policies.sql
+ 
+\i V196__account_security_view.sql
+ 
+\i V198__security_event_count_function.sql
+
+
+
