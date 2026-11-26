@@ -260,6 +260,17 @@
 \i sql/V175__role_permission_count_function_tests.sql
 
 
+-- =====================================================
+-- SECURITY & ACCESS CONTROL TESTS
+-- =====================================================
+
+
+\i sql/V177__user_permissions_tests.sql
+ 
+\i sql/V179__user_permissions_view_tests.sql
+ 
+\i sql/V181__user_permission_count_function_tests.sql
+
 
 
 

@@ -264,6 +264,17 @@
 \i V174__role_permission_count_function.sql
 
 
+-- =====================================================
+-- SECURITY & ACCESS CONTROL
+-- =====================================================
+
+
+\i V176__create_user_permissions.sql
+ 
+\i V178__user_permissions_view.sql
+ 
+\i V180__user_permission_count_function.sql
+
 
 
 
