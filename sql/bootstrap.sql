@@ -1,74 +1,220 @@
+
+
+
+-- =====================================================
+-- CORE CUSTOMER MANAGEMENT
+-- =====================================================
+ 
 \i V003__create_customers.sql
+ 
 \i V006__customers_email_unique.sql
+ 
 \i V008__create_orders.sql
+ 
 \i V008A__seed_test_data.sql
+ 
 \i V014__customer_orders_view.sql
+ 
 \i V016__get_customer_email_function.sql
+ 
 \i V018__get_customer_total_spent_function.sql
+ 
 \i V020__get_customer_order_count_function.sql
+ 
 \i V022__get_customer_tier_function.sql
+ 
+ 
+-- =====================================================
+-- PRODUCT CATALOG
+-- =====================================================
+ 
 \i V024__create_products.sql
+ 
 \i V026__create_order_items.sql
-\i V028__get_order_total_function.sql
-\i V030__order_details_view.sql
-\i V032__create_payments.sql
-\i V034__get_customer_revenue_function.sql
-\i V036__top_customers_view.sql
-\i V038__top_products_view.sql
-\i V040__get_total_revenue_function.sql
-\i V042__get_top_customer_function.sql
-\i V044__get_top_product_function.sql
-\i V046__business_kpis_view.sql
-\i V048__get_average_order_value_function.sql
-\i V050__get_total_products_sold_function.sql
-\i V052__monthly_revenue_view.sql
-\i V054__top_5_customers_view.sql
-\i V056__sales_dashboard_view.sql
-\i V058__customer_segmentation_view.sql
-\i V060__monthly_products_view.sql
-\i V062__customer_lifetime_value_view.sql
-\i V064__customer_retention_view.sql
-\i V066__sales_forecast_view.sql
-\i V068__product_performance_view.sql
-\i V070__executive_scorecard_view.sql
-\i V072__customer_health_score_view.sql
-\i V074__executive_alerts_view.sql
+ 
 \i V076__create_categories.sql
+ 
 \i V078__products_category_fk.sql
+ 
+ 
+-- =====================================================
+-- SALES OPERATIONS
+-- =====================================================
+ 
+\i V028__get_order_total_function.sql
+ 
+\i V030__order_details_view.sql
+ 
+\i V032__create_payments.sql
+ 
+\i V034__get_customer_revenue_function.sql
+ 
+\i V036__top_customers_view.sql
+ 
+\i V038__top_products_view.sql
+ 
+\i V040__get_total_revenue_function.sql
+ 
+\i V042__get_top_customer_function.sql
+ 
+\i V044__get_top_product_function.sql
+ 
+ 
+-- =====================================================
+-- BUSINESS ANALYTICS
+-- =====================================================
+ 
+\i V046__business_kpis_view.sql
+ 
+\i V048__get_average_order_value_function.sql
+ 
+\i V050__get_total_products_sold_function.sql
+ 
+\i V052__monthly_revenue_view.sql
+ 
+\i V054__top_5_customers_view.sql
+ 
+\i V056__sales_dashboard_view.sql
+ 
+\i V058__customer_segmentation_view.sql
+ 
+\i V060__monthly_products_view.sql
+ 
+\i V062__customer_lifetime_value_view.sql
+ 
+\i V064__customer_retention_view.sql
+ 
+\i V066__sales_forecast_view.sql
+ 
+\i V068__product_performance_view.sql
+ 
+\i V070__executive_scorecard_view.sql
+ 
+\i V072__customer_health_score_view.sql
+ 
+\i V074__executive_alerts_view.sql
+ 
+ 
+-- =====================================================
+-- INVENTORY MANAGEMENT
+-- =====================================================
+ 
 \i V080__create_inventory.sql
+ 
 \i V082__inventory_alerts_view.sql
+ 
 \i V084__get_low_stock_count_function.sql
+ 
 \i V086__inventory_seed_data.sql
+ 
 \i V088__inventory_status_view.sql
+ 
 \i V090__low_stock_products_count_function.sql
+ 
 \i V092__restock_products_view.sql
+ 
 \i V094__out_of_stock_count_function.sql
+ 
 \i V096__inventory_summary_view.sql
+ 
+ 
+-- =====================================================
+-- CUSTOMER LOYALTY
+-- =====================================================
+ 
 \i V098__customer_loyalty_view.sql
+ 
 \i V100__customer_points_function.sql
+ 
 \i V102__top_loyal_customers_view.sql
+ 
+ 
+-- =====================================================
+-- SUPPLIER MANAGEMENT
+-- =====================================================
+ 
 \i V104__create_suppliers.sql
+ 
 \i V106__supplier_products_view.sql
+ 
 \i V108__supplier_count_function.sql
+ 
+ 
+-- =====================================================
+-- PROCUREMENT
+-- =====================================================
+ 
 \i V110__create_purchase_orders.sql
+ 
 \i V112__purchase_order_total_function.sql
+ 
 \i V114__supplier_performance_view.sql
+ 
+ 
+-- =====================================================
+-- FINANCIAL ANALYTICS
+-- =====================================================
+ 
 \i V116__total_supplier_spend_function.sql
+ 
 \i V118__profitability_view.sql
+ 
 \i V120__financial_dashboard_view.sql
+ 
+ 
+-- =====================================================
+-- WAREHOUSE OPERATIONS
+-- =====================================================
+ 
 \i V122__create_warehouse_locations.sql
+ 
 \i V124__inventory_by_location_view.sql
+ 
 \i V126__warehouse_capacity_function.sql
+ 
+ 
+-- =====================================================
+-- SHIPPING & LOGISTICS
+-- =====================================================
+ 
 \i V128__create_shipments.sql
+ 
 \i V130__shipment_status_view.sql
+ 
 \i V132__shipment_count_function.sql
+ 
+ 
+-- =====================================================
+-- TRACKING & CARRIERS
+-- =====================================================
+ 
 \i V134__create_carriers.sql
+ 
 \i V136__shipment_tracking_view.sql
+ 
 \i V138__carrier_count_function.sql
+ 
+ 
+-- =====================================================
+-- NOTIFICATIONS & MONITORING
+-- =====================================================
+ 
 \i V140__create_notifications.sql
+ 
 \i V142__notification_status_view.sql
+ 
 \i V144__notification_count_function.sql
 
+
+-- =====================================================
+-- AUDIT & COMPLIANCE
+-- =====================================================
+ 
+\i V146__create_audit_events.sql
+ 
+\i V148__audit_summary_view.sql
+ 
+\i V150__audit_event_count_function.sql
 
 
 

@@ -421,7 +421,8 @@ Primer entorno PostgreSQL + pgTAP operativo.
 \### Versión estable actual
 
 
-v3.2-tracking-carriers
+v3.4-architecture-cleanup
+
 
 &#x20;
 
@@ -600,6 +601,20 @@ v2.2-business-platform
 ✅ Carriers
 
 ✅ Shipment Management
+
+✅ Notifications
+
+✅ Monitoring
+
+✅ Alerts
+
+✅ bootstrap.sql reorganizado por dominios
+
+✅ all-tests.sql reorganizado por dominios
+
+✅ mantenibilidad mejorada
+
+✅ suite completa validada
 
 
 

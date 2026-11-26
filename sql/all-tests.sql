@@ -199,3 +199,17 @@
 \i sql/V143__notification_status_view_tests.sql
  
 \i sql/V145__notification_count_function_tests.sql
+
+
+
+-- =====================================================
+-- AUDIT & COMPLIANCE TESTS
+-- =====================================================
+ 
+\i sql/V147__audit_events_tests.sql
+ 
+\i sql/V149__audit_summary_view_tests.sql
+ 
+\i sql/V151__audit_event_count_function_tests.sql
+
+
