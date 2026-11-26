@@ -35,3 +35,5 @@
 \i V074__executive_alerts_view.sql
 \i V076__create_categories.sql
 \i V078__products_category_fk.sql
+\i V080__create_inventory.sql
+
