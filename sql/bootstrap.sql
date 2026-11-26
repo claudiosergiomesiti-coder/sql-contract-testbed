@@ -288,4 +288,14 @@
 \i V186__session_count_function.sql
 
 
+-- =====================================================
+-- SECURITY & ACCESS CONTROL
+-- =====================================================
+
+
+\i V188__create_login_events.sql
+ 
+\i V190__login_events_view.sql
+ 
+\i V192__login_event_count_function.sql
 

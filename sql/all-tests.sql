@@ -284,6 +284,16 @@
 \i sql/V187__session_count_function_tests.sql
 
 
+-- =====================================================
+-- SECURITY & ACCESS CONTROL TESTS
+-- =====================================================
+
+
+\i sql/V189__login_events_tests.sql
+ 
+\i sql/V191__login_events_view_tests.sql
+ 
+\i sql/V193__login_event_count_function_tests.sql
 
 
 
