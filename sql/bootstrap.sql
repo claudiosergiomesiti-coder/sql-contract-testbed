@@ -34,3 +34,4 @@
 \i V072__customer_health_score_view.sql
 \i V074__executive_alerts_view.sql
 \i V076__create_categories.sql
+\i V078__products_category_fk.sql

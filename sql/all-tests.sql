@@ -31,4 +31,5 @@
 \i sql/V071__executive_scorecard_view_tests.sql
 \i sql/V073__customer_health_score_view_tests.sql
 \i sql/V075__executive_alerts_view_tests.sql
+\i sql/V079__products_category_fk_tests.sql
 \i sql/V077__categories_tests.sql
