@@ -362,23 +362,33 @@ Workflow actual:
 
 Resultado:
 
-&#x20;
+
 
 ✅ Trabajo completo
 
-&#x20;
+
 
 ✅ Suite completa ejecutada
 
-&#x20;
+
 
 ✅ all-tests.sql operativo
 
-&#x20;
+
 
 ✅ bootstrap.sql operativo
 
-&#x20;
+
+
+✅ Workflow simplificado
+
+
+
+✅ Ejecución mediante all-tests.sql
+
+
+
+✅ Pipeline GitHub Actions estable 
 
 \---
 
@@ -414,13 +424,33 @@ Primer entorno PostgreSQL + pgTAP operativo.
 
 ```text
 
-v1.0-pgtap-ci
-
-```
+v2.1-github-actions-stable```
 
 &#x20;
 
 \---
+
+Historial de versiones
+
+
+
+v0.2-ci-bootstrap
+
+v0.3-github-bootstrap-pass
+
+v1.0-pgtap-ci
+
+v1.1-reporting
+
+v1.3-business-model
+
+v1.4-analytics
+
+v1.5-executive-metrics
+
+v2-github-actions-baseline
+
+v2.1-github-actions-stable
 
 &#x20;
 
@@ -496,5 +526,5 @@ v1.0-pgtap-ci
 
 &#x20;
 
-✅ v1.0-pgtap-ci
+✅ v2.1-github-actions-stable
 
