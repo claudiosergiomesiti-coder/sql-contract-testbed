@@ -621,7 +621,17 @@ v2.2-business-platform
 
 ✅ Compliance Foundation
 
+✅ Roles
 
+✅ Users
+
+✅ Permissions
+
+✅ Role Permissions
+
+✅ User Permissions
+
+✅ RBAC Foundation
 
 
 

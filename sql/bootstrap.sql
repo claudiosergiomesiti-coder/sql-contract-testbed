@@ -276,5 +276,16 @@
 \i V180__user_permission_count_function.sql
 
 
+-- =====================================================
+-- SECURITY & ACCESS CONTROL
+-- =====================================================
+
+
+\i V182__create_sessions.sql
+ 
+\i V184__active_sessions_view.sql
+ 
+\i V186__session_count_function.sql
+
 
 

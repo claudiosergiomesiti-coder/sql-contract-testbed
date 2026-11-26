@@ -272,6 +272,17 @@
 \i sql/V181__user_permission_count_function_tests.sql
 
 
+-- =====================================================
+-- SECURITY & ACCESS CONTROL TESTS
+-- =====================================================
+
+
+\i sql/V183__sessions_tests.sql
+ 
+\i sql/V185__active_sessions_view_tests.sql
+ 
+\i sql/V187__session_count_function_tests.sql
+
 
 
 
