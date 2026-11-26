@@ -228,7 +228,14 @@
 \i V156__role_count_function.sql
 
 
+-- =====================================================
+-- SECURITY & ACCESS CONTROL
+-- =====================================================
 
 
-
+\i V158__create_users.sql
+ 
+\i V160__user_summary_view.sql
+ 
+\i V162__user_count_function.sql
 

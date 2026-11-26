@@ -224,4 +224,23 @@
 \i sql/V157__role_count_function_tests.sql
 
 
+-- =====================================================
+-- SECURITY & ACCESS CONTROL TESTS
+-- =====================================================
+
+
+\i sql/V159__users_tests.sql
+ 
+\i sql/V161__user_summary_view_tests.sql
+ 
+\i sql/V163__user_count_function_tests.sql
+
+
+
+
+
+
+
+
+
 
