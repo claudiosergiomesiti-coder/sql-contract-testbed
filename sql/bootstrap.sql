@@ -62,4 +62,11 @@
 \i V128__create_shipments.sql
 \i V130__shipment_status_view.sql
 \i V132__shipment_count_function.sql
+\i V134__create_carriers.sql
+\i V136__shipment_tracking_view.sql
+\i V138__carrier_count_function.sql
+
+
+
+
 

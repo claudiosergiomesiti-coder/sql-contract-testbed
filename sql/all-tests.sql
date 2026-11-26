@@ -60,4 +60,10 @@
 \i sql/V129__shipments_tests.sql
 \i sql/V131__shipment_status_view_tests.sql
 \i sql/V133__shipment_count_function_tests.sql
+\i sql/V135__carriers_tests.sql
+\i sql/V137__shipment_tracking_view_tests.sql
+\i sql/V139__carrier_count_function_tests.sql
+
+
+
 
