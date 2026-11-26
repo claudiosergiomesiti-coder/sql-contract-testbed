@@ -34,3 +34,5 @@
 \i sql/V077__categories_tests.sql
 \i sql/V079__products_category_fk_tests.sql
 \i sql/V081__inventory_tests.sql
+\i sql/V083__inventory_alerts_view_tests.sql
+

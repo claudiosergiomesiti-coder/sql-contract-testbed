@@ -36,4 +36,4 @@
 \i V076__create_categories.sql
 \i V078__products_category_fk.sql
 \i V080__create_inventory.sql
-
+\i V082__inventory_alerts_view.sql
