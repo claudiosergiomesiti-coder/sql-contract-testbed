@@ -48,4 +48,10 @@
 \i sql/V105__suppliers_tests.sql
 \i sql/V107__supplier_products_view_tests.sql
 \i sql/V109__supplier_count_function_tests.sql
+\i sql/V111__purchase_orders_tests.sql
+\i sql/V113__purchase_order_total_tests.sql
+\i sql/V115__supplier_performance_view_tests.sql
+
+
+
 

@@ -50,3 +50,7 @@
 \i V104__create_suppliers.sql
 \i V106__supplier_products_view.sql
 \i V108__supplier_count_function.sql
+\i V110__create_purchase_orders.sql
+\i V112__purchase_order_total_function.sql
+\i V114__supplier_performance_view.sql
+
