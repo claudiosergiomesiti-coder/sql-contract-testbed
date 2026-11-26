@@ -65,7 +65,9 @@
 \i V134__create_carriers.sql
 \i V136__shipment_tracking_view.sql
 \i V138__carrier_count_function.sql
-
+\i V140__create_notifications.sql
+\i V142__notification_status_view.sql
+\i V144__notification_count_function.sql
 
 
 

@@ -420,11 +420,8 @@ Primer entorno PostgreSQL + pgTAP operativo.
 
 \### Versión estable actual
 
-&#x20;
 
-```text
-
-v2.1-github-actions-stable```
+v3.2-tracking-carriers
 
 &#x20;
 
@@ -597,6 +594,12 @@ v2.2-business-platform
 ✅ Financial Dashboard
 
 ✅ Supplier Spend Analytics
+
+✅ Tracking
+
+✅ Carriers
+
+✅ Shipment Management
 
 
 

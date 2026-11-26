@@ -63,7 +63,9 @@
 \i sql/V135__carriers_tests.sql
 \i sql/V137__shipment_tracking_view_tests.sql
 \i sql/V139__carrier_count_function_tests.sql
-
+\i sql/V141__notifications_tests.sql
+\i sql/V143__notification_status_view_tests.sql
+\i sql/V145__notification_count_function_tests.sql
 
 
 
