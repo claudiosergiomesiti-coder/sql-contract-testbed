@@ -217,4 +217,18 @@
 \i V150__audit_event_count_function.sql
 
 
+-- =====================================================
+-- SECURITY & ACCESS CONTROL
+-- =====================================================
+ 
+\i V152__create_roles.sql
+ 
+\i V154__role_summary_view.sql
+ 
+\i V156__role_count_function.sql
+
+
+
+
+
 

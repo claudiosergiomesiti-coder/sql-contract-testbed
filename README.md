@@ -421,8 +421,7 @@ Primer entorno PostgreSQL + pgTAP operativo.
 \### Versión estable actual
 
 
-v3.4-architecture-cleanup
-
+v3.5-audit-compliance
 
 &#x20;
 
@@ -616,6 +615,11 @@ v2.2-business-platform
 
 ✅ suite completa validada
 
+✅ Audit Events
+
+✅ Audit Summary
+
+✅ Compliance Foundation
 
 
 

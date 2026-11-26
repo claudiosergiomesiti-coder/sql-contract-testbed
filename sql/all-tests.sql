@@ -213,3 +213,15 @@
 \i sql/V151__audit_event_count_function_tests.sql
 
 
+-- =====================================================
+-- SECURITY & ACCESS CONTROL TESTS
+-- =====================================================
+ 
+\i sql/V153__roles_tests.sql
+ 
+\i sql/V155__role_summary_view_tests.sql
+ 
+\i sql/V157__role_count_function_tests.sql
+
+
+
