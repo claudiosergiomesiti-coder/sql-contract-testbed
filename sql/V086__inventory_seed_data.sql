@@ -1,0 +1,21 @@
+INSERT INTO inventory (
+    product_id,
+    stock,
+    minimum_stock
+)
+VALUES
+(
+    1,
+    100,
+    10
+),
+(
+    2,
+    5,
+    10
+),
+(
+    3,
+    0,
+    10
+);

@@ -38,4 +38,9 @@
 \i V080__create_inventory.sql
 \i V082__inventory_alerts_view.sql
 \i V084__get_low_stock_count_function.sql
+\i V086__inventory_seed_data.sql
+\i V088__inventory_status_view.sql
+\i V090__low_stock_products_count_function.sql
+
+
 

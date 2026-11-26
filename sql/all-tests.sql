@@ -36,5 +36,7 @@
 \i sql/V081__inventory_tests.sql
 \i sql/V083__inventory_alerts_view_tests.sql
 \i sql/V085__get_low_stock_count_tests.sql
-
+\i sql/V087__inventory_seed_data_tests.sql
+\i sql/V089__inventory_status_view_tests.sql
+\i sql/V091__low_stock_products_count_function_tests.sql
 
