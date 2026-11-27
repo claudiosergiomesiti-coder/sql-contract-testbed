@@ -289,7 +289,11 @@
  
 \i sql/V223__high_risk_threat_count_tests.sql
 
-
+\i sql/V225__security_metrics_tests.sql
+ 
+\i sql/V227__security_dashboard_view_tests.sql
+ 
+\i sql/V229__critical_threat_count_tests.sql
 
 
 

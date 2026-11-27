@@ -293,3 +293,13 @@
  
 \i V222__high_risk_threat_count.sql
 
+\i V224__create_security_metrics.sql
+ 
+\i V226__security_dashboard_view.sql
+ 
+\i V228__critical_threat_count.sql
+
+
+
+
+
