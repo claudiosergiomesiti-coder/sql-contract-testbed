@@ -331,6 +331,23 @@
  
 \i sql/V265__high_assessment_count_tests.sql
 
+\i sql/V267__risk_reviews_tests.sql
+ 
+\i sql/V269__risk_reviews_view_tests.sql
+ 
+\i sql/V271__open_review_count_tests.sql
+ 
+\i sql/V273__risk_owners_tests.sql
+ 
+\i sql/V275__risk_owners_view_tests.sql
+ 
+\i sql/V277__assigned_risk_count_tests.sql
+
+
+
+
+
+
 
 
 

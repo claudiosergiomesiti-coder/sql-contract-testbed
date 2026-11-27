@@ -335,3 +335,24 @@
  
 \i V264__high_assessment_count.sql
 
+\i V266__create_risk_reviews.sql
+ 
+\i V268__risk_reviews_view.sql
+ 
+\i V270__open_review_count.sql
+ 
+\i V272__create_risk_owners.sql
+ 
+\i V274__risk_owners_view.sql
+ 
+\i V276__assigned_risk_count.sql
+
+
+
+
+
+
+
+
+
+
