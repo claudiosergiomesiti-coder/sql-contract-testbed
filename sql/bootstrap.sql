@@ -359,7 +359,11 @@
  
 \i V288__effective_control_count.sql
 
-
+\i V290__create_control_tests.sql
+ 
+\i V292__control_tests_view.sql
+ 
+\i V294__passed_control_test_count.sql
 
 
 

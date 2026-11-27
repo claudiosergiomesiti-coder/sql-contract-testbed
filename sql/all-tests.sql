@@ -355,7 +355,11 @@
  
 \i sql/V289__effective_control_count_tests.sql
 
-
+\i sql/V291__control_tests_tests.sql
+ 
+\i sql/V293__control_tests_view_tests.sql
+ 
+\i sql/V295__passed_control_test_count_tests.sql
 
 
 
