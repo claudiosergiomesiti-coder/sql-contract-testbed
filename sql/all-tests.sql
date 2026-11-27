@@ -325,7 +325,11 @@
  
 \i sql/V259__open_mitigation_count_tests.sql
 
-
+\i sql/V261__risk_assessments_tests.sql
+ 
+\i sql/V263__risk_assessment_view_tests.sql
+ 
+\i sql/V265__high_assessment_count_tests.sql
 
 
 

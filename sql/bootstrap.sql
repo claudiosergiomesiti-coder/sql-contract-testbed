@@ -329,5 +329,9 @@
  
 \i V258__open_mitigation_count.sql
 
-
+\i V260__create_risk_assessments.sql
+ 
+\i V262__risk_assessment_view.sql
+ 
+\i V264__high_assessment_count.sql
 
