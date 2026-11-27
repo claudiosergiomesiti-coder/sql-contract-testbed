@@ -365,7 +365,11 @@
  
 \i V294__passed_control_test_count.sql
 
-
+\i V296__create_policy_exceptions.sql
+ 
+\i V298__policy_exceptions_view.sql
+ 
+\i V300__open_exception_count.sql
 
 
 

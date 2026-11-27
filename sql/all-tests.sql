@@ -361,5 +361,7 @@
  
 \i sql/V295__passed_control_test_count_tests.sql
 
-
+\i sql/V297__policy_exceptions_tests.sql
+ 
+\i sql/V299__policy_exceptions_view_tests.sql
 
