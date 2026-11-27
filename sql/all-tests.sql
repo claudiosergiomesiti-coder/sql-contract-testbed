@@ -331,4 +331,15 @@
  
 \i sql/V211__security_incident_count_function_tests.sql
 
+\i sql/V213__incident_responses_tests.sql
+ 
+\i sql/V215__incident_responses_view_tests.sql
+ 
+\i sql/V217__open_incident_count_tests.sql
+
+
+
+
+
+
 
