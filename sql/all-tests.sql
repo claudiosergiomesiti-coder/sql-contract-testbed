@@ -343,7 +343,11 @@
  
 \i sql/V277__assigned_risk_count_tests.sql
 
-
+\i sql/V279__risk_escalations_tests.sql
+ 
+\i sql/V281__risk_escalations_view_tests.sql
+ 
+\i sql/V283__open_escalation_count_tests.sql
 
 
 

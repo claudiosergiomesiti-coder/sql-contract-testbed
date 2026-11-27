@@ -347,7 +347,11 @@
  
 \i V276__assigned_risk_count.sql
 
-
+\i V278__create_risk_escalations.sql
+ 
+\i V280__risk_escalations_view.sql
+ 
+\i V282__open_escalation_count.sql
 
 
 
