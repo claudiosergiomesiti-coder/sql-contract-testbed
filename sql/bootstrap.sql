@@ -324,8 +324,14 @@
 \i V204__mfa_method_count_function.sql
 
 
+-- =====================================================
+-- SECURITY & ACCESS CONTROL
+-- ====================================================
 
 
-
-
+\i V206__create_security_incide*ts.sql
+ 
+\i V208__security_incident*_view.sql
+ 
+\i V210__security_incid*nt_count_function.sql
 
