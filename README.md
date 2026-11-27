@@ -1,599 +1,163 @@
-\# SQL Contract Testbed
 
-&#x20;
+SQL Contract Testbed
+Descripción
+Entorno de pruebas automatizadas para contratos SQL utilizando PostgreSQL, pgTAP y pg_prove.
 
-\## Descripción
+El proyecto permite validar esquemas, restricciones, funciones, vistas y reglas de negocio mediante una suite automatizada ejecutable tanto en entorno local como mediante GitHub Actions.
 
-&#x20;
+Estado actual
+Versión actual: v4.4-mfa-foundation
 
-Entorno de pruebas automatizadas para contratos SQL utilizando PostgreSQL, pgTAP y pg\_prove.
+Última migración: V205
 
-&#x20;
+Estado CI/CD: ✅ PASS
 
-El proyecto permite validar esquemas, restricciones, funciones, vistas y reglas de negocio mediante una suite automatizada ejecutable tanto en entorno local como en GitHub Actions.
+GitHub Actions: ✅ Operativo
 
-&#x20;
+Trabajo completo: ✅
 
-\---
+Última actualización: 2026-11-26
 
-&#x20;
-
-\## Estado actual
-
-&#x20;
-
-\*\*Versión estable:\*\* `v1.0-pgtap-ci`
-
-&#x20;
-
-\*\*Estado general:\*\* ✅ PASS
-
-&#x20;
-
-\*\*Trabajo completo:\*\* ✅
-
-&#x20;
-
-\*\*GitHub Actions:\*\* ✅
-
-&#x20;
-
-\*\*Suite automatizada:\*\* ✅
-
-&#x20;
-
-\---
-
-&#x20;
-
-\## Tecnologías
-
-&#x20;
-
-\- PostgreSQL 16.16
-
-\- pgTAP 1.3.4
-
-\- pg\_prove 3.37
-
-\- Docker Desktop
-
-\- Docker Compose
-
-\- WSL2
-
-\- Ubuntu
-
-\- GitHub Actions
-
-&#x20;
-
-\---
-
-&#x20;
-
-\## Infraestructura validada
-
-&#x20;
-
-\### Sistema
-
-&#x20;
-
-\- Windows 11
-
-\- WSL2
-
-\- Ubuntu
-
-&#x20;
-
-\### Contenedores
-
-&#x20;
-
-\- Docker Desktop operativo
-
-\- Docker Compose operativo
-
-&#x20;
-
-\### Base de datos
-
-&#x20;
-
+Tecnologías
+PostgreSQL 16.16
+pgTAP 1.3.4
+pg_prove 3.37
+Docker Desktop
+Docker Compose
+WSL2
+Ubuntu
+GitHub Actions
+Infraestructura validada
+Sistema
+Windows 11
+WSL2
+Ubuntu
+Contenedores
+Docker Desktop operativo
+Docker Compose operativo
+Base de datos
 Verificada mediante:
 
-&#x20;
-
-```sql
-
 SELECT version();
-
-```
-
-&#x20;
-
 Resultado:
-
-&#x20;
-
-```text
 
 PostgreSQL 16.16 (Debian 16.16-1.pgdg13+1)
-
-```
-
-&#x20;
-
 Bases verificadas:
 
-&#x20;
-
-\- contract\_db
-
-\- postgres
-
-\- template0
-
-\- template1
-
-&#x20;
-
-\---
-
-&#x20;
-
-\## pgTAP
-
-&#x20;
-
+contract_db
+postgres
+template0
+template1
+pgTAP
 Extensiones instaladas:
 
-&#x20;
-
-```sql
-
 SELECT extname, extversion
-
-FROM pg\_extension;
-
-```
-
-&#x20;
-
+FROM pg_extension;
 Resultado:
 
-&#x20;
-
-| Extension | Version |
-
-|-----------|----------|
-
-| plpgsql | 1.0 |
-
-| pgtap | 1.3.4 |
-
-&#x20;
-
+Extension	Version
+plpgsql	1.0
+pgtap	1.3.4
 Estado:
 
-&#x20;
-
-\- PostgreSQL 16.16 ✅
-
-\- pgTAP 1.3.4 ✅
-
-&#x20;
-
-\---
-
-&#x20;
-
-\## Primera prueba pgTAP
-
-&#x20;
-
-Prueba ejecutada:
-
-&#x20;
-
-```sql
-
-SELECT plan(1);
-
-SELECT pass('Hello pgTAP');
-
-SELECT \* FROM finish();
-
-```
-
-&#x20;
-
-Resultado:
-
-&#x20;
-
-```text
-
-1..1
-
-ok 1 - Hello pgTAP
-
-```
-
-&#x20;
-
-Estado:
-
-&#x20;
-
-\- PostgreSQL ✅
-
-\- pgTAP ✅
-
-\- Primera prueba ejecutada ✅
-
-&#x20;
-
-\---
-
-&#x20;
-
-\## Componentes validados
-
-&#x20;
-
-\### Scripts PowerShell
-
-&#x20;
-
-\- bootstrap.ps1
-
-\- parse-tap.ps1
-
-\- generate-report.ps1
-
-\- validate-report.ps1
-
-&#x20;
-
-\### Artefactos generados
-
-&#x20;
-
-\- postgres-version.txt
-
-\- pgtap-version.txt
-
-\- pgprove-version.txt
-
-\- pgprove-sample.log
-
-\- validation-report.json
-
-&#x20;
-
-\---
-
-&#x20;
-
-\## Suite de pruebas
-
-&#x20;
-
+PostgreSQL 16.16 ✅
+pgTAP 1.3.4 ✅
+Componentes validados
+Scripts PowerShell
+bootstrap.ps1
+parse-tap.ps1
+generate-report.ps1
+validate-report.ps1
+Artefactos generados
+postgres-version.txt
+pgtap-version.txt
+pgprove-version.txt
+pgprove-sample.log
+validation-report.json
+Suite de pruebas
 Estado actual:
 
-&#x20;
-
-```text
-
 PASS
-
-```
-
-&#x20;
-
 Resumen:
 
-&#x20;
-
-\- Tests ejecutados: 60+ En crecimiento continuo
-
-\- Fallos: 0
-
-&#x20;
-
+Tests ejecutados: 200+
+Fallos: 0
 Incluye validaciones de:
 
-&#x20;
-
-\- Tablas
-
-\- Restricciones
-
-\- Claves foráneas
-
-\- Datos de prueba
-
-\- Funciones SQL
-
-\- Vistas SQL
-
-\- Reglas de negocio
-
-&#x20;
-
-\---
-
-&#x20;
-
-\## CI/CD
-
-&#x20;
-
+Tablas
+Restricciones
+Claves foráneas
+Datos de prueba
+Funciones SQL
+Vistas SQL
+Reglas de negocio
+Seguridad
+Auditoría
+CI/CD
 Pipeline automatizado mediante GitHub Actions.
 
-&#x20;
+Workflow principal:
 
-Workflow actual:
-
-&#x20;
-
-1\. Checkout
-
-2\. Build image
-
-3\. Start container
-
-4\. Wait PostgreSQL
-
-5\. Verify PostgreSQL
-
-6\. Create pgTAP extension
-
-7\. Copy SQL folder
-
-8\. Run bootstrap
-
-9\. Ejecutar suite completa
-
-&#x20;
-
+Checkout
+Build image
+Start container
+Wait PostgreSQL
+Verify PostgreSQL
+Create pgTAP extension
+Copy SQL folder
+Run bootstrap
+Ejecutar suite completa
 Resultado:
-
-
 
 ✅ Trabajo completo
 
-
-
 ✅ Suite completa ejecutada
-
-
 
 ✅ all-tests.sql operativo
 
-
-
 ✅ bootstrap.sql operativo
-
-
 
 ✅ Workflow simplificado
 
+✅ Pipeline GitHub Actions estable
 
+Arquitectura
+✅ bootstrap.sql organizado por dominios
 
-✅ Ejecución mediante all-tests.sql
+✅ all-tests.sql organizado por dominios
 
+✅ PostgreSQL 16.16
 
+✅ pgTAP 1.3.4
 
-✅ Pipeline GitHub Actions estable 
-
-\---
-
-&#x20;
-
-\## Git
-
-&#x20;
-
-\### Commit base estable
-
-&#x20;
-
-```text
-
-d54224cc8c0d28d5b9dd6cf9cb350d0425644564
-
-```
-
-&#x20;
-
-Descripción:
-
-&#x20;
-
-Primer entorno PostgreSQL + pgTAP operativo.
-
-&#x20;
-
-\### Versión estable actual
-
-
-v3.5-audit-compliance
-
-&#x20;
-
-\---
-
-Historial de versiones
-
-
-
-v0.2-ci-bootstrap
-
-v0.3-github-bootstrap-pass
-
-v1.0-pgtap-ci
-
-v1.1-reporting
-
-v1.3-business-model
-
-v1.4-analytics
-
-v1.5-executive-metrics
-
-v2-github-actions-baseline
-
-v2.1-github-actions-stable
-
-v2.2-business-platform
-
-v2.3-financial-analytics
-
-v3.0-warehouse-operations
-
-
-
-
-
-
-
-\## Backups
-
-&#x20;
-
-\- sql-contract-testbed-backup.zip
-
-\- sql-contract-testbed-postgres-real.zip
-
-\- sql-contract-testbed-before-pgtap.zip
-
-\- sql-contract-testbed-pgtap-working.zip
-
-\- sql-contract-testbed-v0.1-operativo.zip
-
-&#x20;
-
-\---
-
-&#x20;
-
-\## Hitos alcanzados
-
-&#x20;
-
-✅ PostgreSQL 16.16 operativo
-
-&#x20;
-
-✅ pgTAP 1.3.4 operativo
-
-&#x20;
-
-✅ pg\_prove 3.37 operativo
-
-&#x20;
-
-✅ Docker Desktop operativo
-
-&#x20;
-
-✅ Docker Compose operativo
-
-&#x20;
-
-✅ WSL2 operativo
-
-&#x20;
-
-✅ Generación de informes JSON
-
-&#x20;
-
-✅ Validación de informes
-
-&#x20;
-
-✅ bootstrap.sql
-
-✅ all-tests.sql
+✅ pg_prove 3.37
 
 ✅ GitHub Actions
 
-✅ Pipeline CI/CD estable
+✅ CI/CD estable
 
-✅ Sales Module
-
-✅ Inventory Module
-
-✅ Procurement Module
-
-✅ Financial Analytics Module
-
-✅ Warehouse Operations Module
-
-✅ v3.0-warehouse-operations
-
-
-
-
+✅ Más de 200 migraciones y pruebas automatizadas
 
 Módulos implementados
-
-
-
+Business
 ✅ Sales
 
+✅ Product Catalog
 
+✅ Inventory Management
 
-✅ Inventory
+✅ Warehouse Operations
 
+✅ Supplier Management
 
-
-✅ Analytics
-
-
-
-✅ Executive Metrics
-
-
-
-✅ Loyalty
-
-
-
-✅ Suppliers
-
-
-
-
-
-Versión actual
-
-
-
-v2.2-business-platform
-
-
-
-✅ Suppliers
-
-✅ Purchase Orders
-
-✅ Inventory Intelligence
-
-✅ Customer Loyalty
+✅ Procurement
 
 ✅ Financial Analytics
 
-✅ Profitability
+✅ Customer Loyalty
 
-✅ Financial Dashboard
-
-✅ Supplier Spend Analytics
+Logistics
+✅ Shipping
 
 ✅ Tracking
 
@@ -601,19 +165,12 @@ v2.2-business-platform
 
 ✅ Shipment Management
 
+Monitoring
 ✅ Notifications
 
 ✅ Monitoring
 
 ✅ Alerts
-
-✅ bootstrap.sql reorganizado por dominios
-
-✅ all-tests.sql reorganizado por dominios
-
-✅ mantenibilidad mejorada
-
-✅ suite completa validada
 
 ✅ Audit Events
 
@@ -621,6 +178,7 @@ v2.2-business-platform
 
 ✅ Compliance Foundation
 
+Security
 ✅ Roles
 
 ✅ Users
@@ -631,20 +189,90 @@ v2.2-business-platform
 
 ✅ User Permissions
 
+✅ Sessions
+
+✅ Login Events
+
+✅ Password Policies
+
+✅ MFA Methods
+
 ✅ RBAC Foundation
 
+Hito actual
+V205 - MFA Foundation
+✅ Roles
 
-Hito alcanzado
+✅ Users
 
-V199
+✅ Permissions
 
-Security Foundation Complete
+✅ Role Permissions
 
+✅ User Permissions
 
+✅ Sessions
 
+✅ Login Events
 
+✅ Password Policies
 
+✅ MFA Methods
 
+✅ Suite completa PASS
 
+Historial de versiones
+v0.2-ci-bootstrap
+v0.3-github-bootstrap-pass
+v1.0-pgtap-ci
+v1.1-reporting
+v1.3-business-model
+v1.4-analytics
+v1.5-executive-metrics
+v2-github-actions-baseline
+v2.1-github-actions-stable
+v2.2-business-platform
+v2.3-financial-analytics
+v3.0-warehouse-operations
+v3.5-audit-compliance
+v3.6-security-access-control
+v3.7-users-management
+v3.8-permissions-management
+v3.9-role-permissions
+v4.0-rbac-foundation
+v4.1-authentication-sessions
+v4.2-login-events-audit
+v4.3-security-foundation
+v4.4-mfa-foundation
+Git
+Commit base estable
+d54224cc8c0d28d5b9dd6cf9cb350d0425644564
+Descripción:
 
+Primer entorno PostgreSQL + pgTAP operativo.
 
+Backups
+sql-contract-testbed-backup.zip
+sql-contract-testbed-postgres-real.zip
+sql-contract-testbed-before-pgtap.zip
+sql-contract-testbed-pgtap-working.zip
+sql-contract-testbed-v0.1-operativo.zip
+Próximo objetivo
+V206–V211
+Authentication Enhancement
+
+MFA Enforcement
+Security Incidents
+Threat Monitoring
+Advanced Authentication Controls
+Estado actual:
+
+✅ V205
+
+✅ PASS
+
+✅ CI/CD estable
+
+✅ Arquitectura organizada
+
+✅ MFA Foundation completada
