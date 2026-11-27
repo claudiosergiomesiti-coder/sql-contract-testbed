@@ -311,3 +311,8 @@
  
 \i V240__active_controls_count.sql
 
+\i V242__create_security_policies.sql
+ 
+\i V244__security_policies_view.sql
+ 
+\i V246__active_policy_count.sql

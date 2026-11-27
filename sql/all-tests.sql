@@ -307,5 +307,12 @@
  
 \i sql/V241__active_controls_count_tests.sql
 
+\i sql/V243__security_policies_tests.sql
+ 
+\i sql/V245__security_policies_view_tests.sql
+ 
+\i sql/V247__active_policy_count_tests.sql
+
+
 
 
