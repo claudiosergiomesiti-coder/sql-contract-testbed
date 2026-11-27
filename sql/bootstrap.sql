@@ -227,23 +227,11 @@
  
 \i V156__role_count_function.sql
 
-
--- =====================================================
--- SECURITY & ACCESS CONTROL
--- =====================================================
-
-
 \i V158__create_users.sql
  
 \i V160__user_summary_view.sql
  
 \i V162__user_count_function.sql
-
-
--- =====================================================
--- SECURITY & ACCESS CONTROL
--- =====================================================
-
 
 \i V164__create_permissions.sql
  
@@ -251,23 +239,11 @@
  
 \i V168__permission_count_function.sql
 
-
--- =====================================================
--- SECURITY & ACCESS CONTROL
--- =====================================================
-
-
 \i V170__create_role_permissions.sql
  
 \i V172__role_permissions_view.sql
  
 \i V174__role_permission_count_function.sql
-
-
--- =====================================================
--- SECURITY & ACCESS CONTROL
--- =====================================================
-
 
 \i V176__create_user_permissions.sql
  
@@ -275,23 +251,11 @@
  
 \i V180__user_permission_count_function.sql
 
-
--- =====================================================
--- SECURITY & ACCESS CONTROL
--- =====================================================
-
-
 \i V182__create_sessions.sql
  
 \i V184__active_sessions_view.sql
  
 \i V186__session_count_function.sql
-
-
--- =====================================================
--- SECURITY & ACCESS CONTROL
--- =====================================================
-
 
 \i V188__create_login_events.sql
  
@@ -299,35 +263,17 @@
  
 \i V192__login_event_count_function.sql
 
-
--- =====================================================
--- SECURITY & ACCESS CONTROL
--- =====================================================
-
-
 \i V194__create_password_policies.sql
  
 \i V196__account_security_view.sql
  
 \i V198__security_event_count_function.sql
 
-
--- =====================================================
--- SECURITY & ACCESS CONTROL
--- =====================================================
-
-
 \i V200__create_mfa_methods.sql
  
 \i V202__mfa_summary_view.sql
  
 \i V204__mfa_method_count_function.sql
-
-
--- =====================================================
--- SECURITY & ACCESS CONTROL
--- ====================================================
-
 
 \i V206__create_security_incidents.sql
  
@@ -341,5 +287,9 @@
  
 \i V216__open_incident_count.sql
 
-
+\i V218__create_threat_classifications.sql
+ 
+\i V220__threat_summary_view.sql
+ 
+\i V222__high_risk_threat_count.sql
 

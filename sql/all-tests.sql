@@ -223,23 +223,11 @@
  
 \i sql/V157__role_count_function_tests.sql
 
-
--- =====================================================
--- SECURITY & ACCESS CONTROL TESTS
--- =====================================================
-
-
 \i sql/V159__users_tests.sql
  
 \i sql/V161__user_summary_view_tests.sql
  
 \i sql/V163__user_count_function_tests.sql
-
-
--- =====================================================
--- SECURITY & ACCESS CONTROL TESTS
--- =====================================================
-
 
 \i sql/V165__permissions_tests.sql
  
@@ -247,23 +235,11 @@
  
 \i sql/V169__permission_count_function_tests.sql
 
-
--- =====================================================
--- SECURITY & ACCESS CONTROL TESTS
--- =====================================================
-
-
 \i sql/V171__role_permissions_tests.sql
  
 \i sql/V173__role_permissions_view_tests.sql
  
 \i sql/V175__role_permission_count_function_tests.sql
-
-
--- =====================================================
--- SECURITY & ACCESS CONTROL TESTS
--- =====================================================
-
 
 \i sql/V177__user_permissions_tests.sql
  
@@ -271,23 +247,11 @@
  
 \i sql/V181__user_permission_count_function_tests.sql
 
-
--- =====================================================
--- SECURITY & ACCESS CONTROL TESTS
--- =====================================================
-
-
 \i sql/V183__sessions_tests.sql
  
 \i sql/V185__active_sessions_view_tests.sql
  
 \i sql/V187__session_count_function_tests.sql
-
-
--- =====================================================
--- SECURITY & ACCESS CONTROL TESTS
--- =====================================================
-
 
 \i sql/V189__login_events_tests.sql
  
@@ -295,35 +259,17 @@
  
 \i sql/V193__login_event_count_function_tests.sql
 
-
--- =====================================================
--- SECURITY & ACCESS CONTROL TESTS
--- =====================================================
-
-
 \i sql/V195__password_policies_tests.sql
  
 \i sql/V197__account_security_view_tests.sql
  
 \i sql/V199__security_event_count_function_tests.sql
 
-
--- =====================================================
--- SECURITY & ACCESS CONTROL TESTS
--- =====================================================
-
-
 \i sql/V201__mfa_methods_tests.sql
  
 \i sql/V203__mfa_summary_view_tests.sql
  
 \i sql/V205__mfa_method_count_function_tests.sql
-
-
--- =====================================================
--- SECURITY & ACCESS CONTROL TESTS
--- =====================================================
-
 
 \i sql/V207__security_incidents_tests.sql
  
@@ -337,7 +283,11 @@
  
 \i sql/V217__open_incident_count_tests.sql
 
-
+\i sql/V219__threat_classifications_tests.sql
+ 
+\i sql/V221__threat_summary_view_tests.sql
+ 
+\i sql/V223__high_risk_threat_count_tests.sql
 
 
 
