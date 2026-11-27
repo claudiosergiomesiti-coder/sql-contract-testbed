@@ -301,3 +301,11 @@
  
 \i sql/V235__compliance_score_function_tests.sql
 
+\i sql/V237__security_controls_tests.sql
+ 
+\i sql/V239__security_controls_view_tests.sql
+ 
+\i sql/V241__active_controls_count_tests.sql
+
+
+

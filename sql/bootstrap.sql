@@ -305,5 +305,9 @@
  
 \i V234__compliance_score_function.sql
 
-
+\i V236__create_security_controls.sql
+ 
+\i V238__security_controls_view.sql
+ 
+\i V240__active_controls_count.sql
 
