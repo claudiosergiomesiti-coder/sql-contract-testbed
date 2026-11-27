@@ -295,5 +295,9 @@
  
 \i sql/V229__critical_threat_count_tests.sql
 
-
+\i sql/V231__compliance_metrics_tests.sql
+ 
+\i sql/V233__compliance_dashboard_view_tests.sql
+ 
+\i sql/V235__compliance_score_function_tests.sql
 

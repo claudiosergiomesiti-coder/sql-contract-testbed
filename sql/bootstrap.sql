@@ -299,7 +299,11 @@
  
 \i V228__critical_threat_count.sql
 
-
+\i V230__create_compliance_metrics.sql
+ 
+\i V232__compliance_dashboard_view.sql
+ 
+\i V234__compliance_score_function.sql
 
 
 
