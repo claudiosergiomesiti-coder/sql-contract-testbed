@@ -349,7 +349,11 @@
  
 \i sql/V283__open_escalation_count_tests.sql
 
-
+\i sql/V285__control_effectiveness_tests.sql
+ 
+\i sql/V287__control_effectiveness_view_tests.sql
+ 
+\i sql/V289__effective_control_count_tests.sql
 
 
 

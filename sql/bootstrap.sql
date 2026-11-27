@@ -353,6 +353,14 @@
  
 \i V282__open_escalation_count.sql
 
+\i V284__create_control_effectiveness.sql
+ 
+\i V286__control_effectiveness_view.sql
+ 
+\i V288__effective_control_count.sql
+
+
+
 
 
 
