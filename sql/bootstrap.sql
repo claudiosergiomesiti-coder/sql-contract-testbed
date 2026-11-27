@@ -329,9 +329,8 @@
 -- ====================================================
 
 
-\i V206__create_security_incide*ts.sql
+\i V206__create_security_incidents.sql
  
-\i V208__security_incident*_view.sql
+\i V208__security_incidents_view.sql
  
-\i V210__security_incid*nt_count_function.sql
-
+\i V210__security_incident_count_function.sql

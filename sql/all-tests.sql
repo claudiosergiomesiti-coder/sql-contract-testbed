@@ -325,10 +325,10 @@
 -- =====================================================
 
 
-\i sql/V207__security_incident*_tests.sql
+\i sql/V207__security_incidents_tests.sql
  
-\i sql/V209__security_*ncidents_view_tests.sql
+\i sql/V209__security_incidents_view_tests.sql
  
-\i sql/V2*1__security_incident_count_functio*_tests.sql
+\i sql/V211__security_incident_count_function_tests.sql
 
 
