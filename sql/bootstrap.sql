@@ -323,4 +323,11 @@
  
 \i V252__critical_risk_count.sql
 
+\i V254__create_risk_mitigations.sql
+ 
+\i V256__risk_mitigations_view.sql
+ 
+\i V258__open_mitigation_count.sql
+
+
 

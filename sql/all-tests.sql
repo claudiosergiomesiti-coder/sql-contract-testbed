@@ -319,4 +319,14 @@
  
 \i sql/V253__critical_risk_count_tests.sql
 
+\i sql/V255__risk_mitigations_tests.sql
+ 
+\i sql/V257__risk_mitigations_view_tests.sql
+ 
+\i sql/V259__open_mitigation_count_tests.sql
+
+
+
+
+
 
