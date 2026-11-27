@@ -316,3 +316,11 @@
 \i V244__security_policies_view.sql
  
 \i V246__active_policy_count.sql
+
+\i V248__create_risk_register.sql
+ 
+\i V250__risk_register_view.sql
+ 
+\i V252__critical_risk_count.sql
+
+

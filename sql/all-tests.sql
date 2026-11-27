@@ -313,6 +313,10 @@
  
 \i sql/V247__active_policy_count_tests.sql
 
-
+\i sql/V249__risk_register_tests.sql
+ 
+\i sql/V251__risk_register_view_tests.sql
+ 
+\i sql/V253__critical_risk_count_tests.sql
 
 
