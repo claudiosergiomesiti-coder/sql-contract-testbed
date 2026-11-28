@@ -485,7 +485,15 @@
 
 \i sql/V420__effective_control_exposure_tests.sql
 
-
+\i sql/V422__compliance_scoring_model_tests.sql
+ 
+\i sql/V424__calculate_compliance_score_tests.sql
+ 
+\i sql/V426__classify_compliance_score_tests.sql
+ 
+\i sql/V428__compliance_score_dashboard_view_tests.sql
+ 
+\i sql/V430__overall_compliance_exposure_tests.sql
 
 
 

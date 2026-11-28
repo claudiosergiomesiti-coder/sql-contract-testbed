@@ -491,7 +491,15 @@
 
 \i V419__effective_control_exposure.sql
 
-
+\i V421__create_compliance_scoring_model.sql
+ 
+\i V423__calculate_compliance_score.sql
+ 
+\i V425__classify_compliance_score.sql
+ 
+\i V427__compliance_score_dashboard_view.sql
+ 
+\i V429__overall_compliance_exposure.sql
 
 
 
