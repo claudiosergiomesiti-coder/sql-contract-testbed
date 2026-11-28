@@ -394,3 +394,19 @@
 \i sql/V328__pending_exception_count_tests.sql
 
 \i sql/V330__approval_completion_rate_tests.sql
+
+\i sql/V332__audit_evidence_tests.sql
+
+\i sql/V334__evidence_reviews_tests.sql
+
+\i sql/V336__audit_evidence_dashboard_view_tests.sql
+
+\i sql/V338__pending_evidence_review_count_tests.sql
+
+\i sql/V340__evidence_completion_rate_tests.sql
+
+
+
+
+
+
