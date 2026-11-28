@@ -471,6 +471,15 @@
 
 \i V399__executive_compliance_score.sql
 
+\i V401__create_risk_scoring_model.sql
+
+\i V403__calculate_risk_score.sql
+
+\i V405__classify_risk_score.sql
+
+\i V407__risk_score_dashboard_view.sql
+
+\i V409__critical_risk_exposure.sql
 
 
 

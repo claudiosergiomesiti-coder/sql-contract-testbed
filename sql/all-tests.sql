@@ -465,7 +465,15 @@
 
 \i sql/V400__executive_compliance_score_tests.sql
 
+\i sql/V402__risk_scoring_model_tests.sql
 
+\i sql/V404__calculate_risk_score_tests.sql
+
+\i sql/V406__classify_risk_score_tests.sql
+
+\i sql/V408__risk_score_dashboard_view_tests.sql
+
+\i sql/V410__critical_risk_exposure_tests.sql
 
 
 
