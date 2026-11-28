@@ -481,7 +481,15 @@
 
 \i V409__critical_risk_exposure.sql
 
+\i V411__create_control_scoring_model.sql
 
+\i V413__calculate_control_score.sql
+
+\i V415__classify_control_effectiveness.sql
+
+\i V417__control_score_dashboard_view.sql
+
+\i V419__effective_control_exposure.sql
 
 
 

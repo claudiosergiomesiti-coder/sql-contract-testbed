@@ -475,7 +475,15 @@
 
 \i sql/V410__critical_risk_exposure_tests.sql
 
+\i sql/V412__control_scoring_model_tests.sql
 
+\i sql/V414__calculate_control_score_tests.sql
+
+\i sql/V416__classify_control_effectiveness_tests.sql
+
+\i sql/V418__control_score_dashboard_view_tests.sql
+
+\i sql/V420__effective_control_exposure_tests.sql
 
 
 
