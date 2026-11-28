@@ -385,4 +385,12 @@
 
 \i sql/V320__sod_compliance_rate_tests.sql
 
+\i sql/V322__exception_requests_tests.sql
 
+\i sql/V324__exception_approvals_tests.sql
+
+\i sql/V326__exception_workflow_dashboard_view_tests.sql
+
+\i sql/V328__pending_exception_count_tests.sql
+
+\i sql/V330__approval_completion_rate_tests.sql

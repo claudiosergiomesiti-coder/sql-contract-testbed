@@ -391,4 +391,12 @@
 
 \i V319__sod_compliance_rate.sql
 
+\i V321__create_exception_requests.sql
 
+\i V323__create_exception_approvals.sql
+
+\i V325__exception_workflow_dashboard_view.sql
+
+\i V327__pending_exception_count.sql
+
+\i V329__approval_completion_rate.sql
