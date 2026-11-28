@@ -411,3 +411,16 @@
 
 \i V339__evidence_completion_rate.sql
 
+\i V341__create_audit_findings.sql
+
+\i V343__create_finding_remediations.sql
+
+\i V345__audit_findings_dashboard_view.sql
+
+\i V347__open_finding_count.sql
+
+\i V349__finding_resolution_rate.sql
+
+
+
+

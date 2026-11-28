@@ -405,7 +405,15 @@
 
 \i sql/V340__evidence_completion_rate_tests.sql
 
+\i sql/V342__audit_findings_tests.sql
 
+\i sql/V344__finding_remediations_tests.sql
+
+\i sql/V346__audit_findings_dashboard_view_tests.sql
+
+\i sql/V348__open_finding_count_tests.sql
+
+\i sql/V350__finding_resolution_rate_tests.sql
 
 
 
