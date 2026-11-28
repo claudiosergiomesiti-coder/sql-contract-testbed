@@ -425,7 +425,15 @@
 
 \i sql/V360__remediation_completion_rate_tests.sql
 
+\i sql/V362__remediation_tracking_tests.sql
 
+\i sql/V364__remediation_closures_tests.sql
+
+\i sql/V366__remediation_tracking_dashboard_view_tests.sql
+
+\i sql/V368__closed_remediation_count_tests.sql
+
+\i sql/V370__remediation_success_rate_tests.sql
 
 
 

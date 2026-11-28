@@ -431,7 +431,15 @@
 
 \i V359__remediation_completion_rate.sql
 
+\i V361__create_remediation_tracking.sql
 
+\i V363__create_remediation_closures.sql
+
+\i V365__remediation_tracking_dashboard_view.sql
+
+\i V367__closed_remediation_count.sql
+
+\i V369__remediation_success_rate.sql
 
 
 
