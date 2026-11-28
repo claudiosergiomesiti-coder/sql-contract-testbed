@@ -371,7 +371,15 @@
  
 \i V300__open_exception_count.sql
 
-
+\i V301__create_access_review_campaigns.sql
+ 
+\i V303__create_access_review_items.sql
+ 
+\i V305__access_review_dashboard_view.sql
+ 
+\i V307__pending_review_count.sql
+ 
+\i V309__review_completion_rate.sql
 
 
 

@@ -365,3 +365,12 @@
  
 \i sql/V299__policy_exceptions_view_tests.sql
 
+\i sql/V302__access_review_campaigns_tests.sql
+ 
+\i sql/V304__access_review_items_tests.sql
+ 
+\i sql/V306__access_review_dashboard_view_tests.sql
+ 
+\i sql/V308__pending_review_count_tests.sql
+ 
+\i sql/V310__review_completion_rate_tests.sql
