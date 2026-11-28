@@ -451,7 +451,15 @@
  
 \i V379__validation_success_rate.sql
 
+\i V381__create_audit_readiness.sql
 
+\i V383__create_readiness_reviews.sql
+
+\i V385__audit_readiness_dashboard_view.sql
+
+\i V387__ready_audit_count.sql
+
+\i V389__audit_readiness_rate.sql
 
 
 

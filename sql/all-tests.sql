@@ -445,7 +445,15 @@
  
 \i sql/V380__validation_success_rate_tests.sql
 
+\i sql/V382__audit_readiness_tests.sql
 
+\i sql/V384__readiness_reviews_tests.sql
+
+\i sql/V386__audit_readiness_dashboard_view_tests.sql
+
+\i sql/V388__ready_audit_count_tests.sql
+
+\i sql/V390__audit_readiness_rate_tests.sql
 
 
 
