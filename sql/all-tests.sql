@@ -455,6 +455,25 @@
 
 \i sql/V390__audit_readiness_rate_tests.sql
 
+\i sql/V392__executive_metrics_tests.sql
+
+\i sql/V394__dashboard_snapshots_tests.sql
+
+\i sql/V396__executive_dashboard_view_tests.sql
+
+\i sql/V398__executive_metric_count_tests.sql
+
+\i sql/V400__executive_compliance_score_tests.sql
+
+
+
+
+
+
+
+
+
+
 
 
 

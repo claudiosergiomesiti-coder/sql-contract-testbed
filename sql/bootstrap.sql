@@ -461,6 +461,24 @@
 
 \i V389__audit_readiness_rate.sql
 
+\i V391__create_executive_metrics.sql
+
+\i V393__create_dashboard_snapshots.sql
+
+\i V395__executive_dashboard_view.sql
+
+\i V397__executive_metric_count.sql
+
+\i V399__executive_compliance_score.sql
+
+
+
+
+
+
+
+
+
 
 
 
