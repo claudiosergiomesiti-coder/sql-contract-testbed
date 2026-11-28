@@ -435,7 +435,15 @@
 
 \i sql/V370__remediation_success_rate_tests.sql
 
-
+\i sql/V372__closure_validations_tests.sql
+ 
+\i sql/V374__validation_approvals_tests.sql
+ 
+\i sql/V376__closure_validation_dashboard_view_tests.sql
+ 
+\i sql/V378__approved_validation_count_tests.sql
+ 
+\i sql/V380__validation_success_rate_tests.sql
 
 
 

@@ -441,7 +441,15 @@
 
 \i V369__remediation_success_rate.sql
 
-
+\i V371__create_closure_validations.sql
+ 
+\i V373__create_validation_approvals.sql
+ 
+\i V375__closure_validation_dashboard_view.sql
+ 
+\i V377__approved_validation_count.sql
+ 
+\i V379__validation_success_rate.sql
 
 
 
