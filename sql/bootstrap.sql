@@ -511,7 +511,15 @@
  
 \i V439__audit_readiness_exposure.sql
 
-
+\i V441__create_executive_kpi_model.sql
+ 
+\i V443__calculate_executive_kpi.sql
+ 
+\i V445__classify_executive_kpi.sql
+ 
+\i V447__executive_kpi_dashboard_view.sql
+ 
+\i V449__executive_risk_exposure.sql
 
 
 

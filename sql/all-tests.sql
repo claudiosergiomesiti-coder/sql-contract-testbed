@@ -505,7 +505,15 @@
  
 \i sql/V440__audit_readiness_exposure_tests.sql
 
-
+\i sql/V442__executive_kpi_model_tests.sql
+ 
+\i sql/V444__calculate_executive_kpi_tests.sql
+ 
+\i sql/V446__classify_executive_kpi_tests.sql
+ 
+\i sql/V448__executive_kpi_dashboard_view_tests.sql
+ 
+\i sql/V450__executive_risk_exposure_tests.sql
 
 
 
