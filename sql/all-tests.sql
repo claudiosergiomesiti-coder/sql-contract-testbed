@@ -374,3 +374,15 @@
 \i sql/V308__pending_review_count_tests.sql
  
 \i sql/V310__review_completion_rate_tests.sql
+
+\i sql/V312__sod_rules_tests.sql
+
+\i sql/V314__sod_violations_tests.sql
+
+\i sql/V316__sod_dashboard_view_tests.sql
+
+\i sql/V318__open_sod_violation_count_tests.sql
+
+\i sql/V320__sod_compliance_rate_tests.sql
+
+

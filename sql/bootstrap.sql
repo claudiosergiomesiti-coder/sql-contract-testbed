@@ -381,6 +381,14 @@
  
 \i V309__review_completion_rate.sql
 
+\i V311__create_sod_rules.sql
 
+\i V313__create_sod_violations.sql
+
+\i V315__sod_dashboard_view.sql
+
+\i V317__open_sod_violation_count.sql
+
+\i V319__sod_compliance_rate.sql
 
 
