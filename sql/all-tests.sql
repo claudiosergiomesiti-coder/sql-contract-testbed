@@ -495,7 +495,15 @@
  
 \i sql/V430__overall_compliance_exposure_tests.sql
 
-
+\i sql/V432__audit_readiness_model_tests.sql
+ 
+\i sql/V434__calculate_audit_readiness_tests.sql
+ 
+\i sql/V436__classify_audit_readiness_tests.sql
+ 
+\i sql/V438__audit_readiness_engine_view_tests.sql
+ 
+\i sql/V440__audit_readiness_exposure_tests.sql
 
 
 

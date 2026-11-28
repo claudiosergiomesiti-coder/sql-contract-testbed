@@ -501,7 +501,15 @@
  
 \i V429__overall_compliance_exposure.sql
 
-
+\i V431__create_audit_readiness_model.sql
+ 
+\i V433__calculate_audit_readiness.sql
+ 
+\i V435__classify_audit_readiness.sql
+ 
+\i V437__audit_readiness_engine_view.sql
+ 
+\i V439__audit_readiness_exposure.sql
 
 
 
