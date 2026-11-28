@@ -415,6 +415,22 @@
 
 \i sql/V350__finding_resolution_rate_tests.sql
 
+\i sql/V352__remediation_plans_tests.sql
+
+\i sql/V354__remediation_tasks_tests.sql
+
+\i sql/V356__remediation_dashboard_view_tests.sql
+
+\i sql/V358__open_remediation_task_count_tests.sql
+
+\i sql/V360__remediation_completion_rate_tests.sql
+
+
+
+
+
+
+
 
 
 

@@ -421,6 +421,22 @@
 
 \i V349__finding_resolution_rate.sql
 
+\i V351__create_remediation_plans.sql
+
+\i V353__create_remediation_tasks.sql
+
+\i V355__remediation_dashboard_view.sql
+
+\i V357__open_remediation_task_count.sql
+
+\i V359__remediation_completion_rate.sql
+
+
+
+
+
+
+
 
 
 
